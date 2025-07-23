@@ -1,1093 +1,1189 @@
 {
   "categories": [
-    { "id": 1, "name": "products" },
-    { "id": 2, "name": "services" }
+    {
+      "id": 1,
+      "name": "products"
+    },
+    {
+      "id": 2,
+      "name": "services"
+    }
   ],
   "subcategories": [
-    { "id": 1, "categoryId": 1, "name": "clothes" },
-    { "id": 2, "categoryId": 1, "name": "food" },
-    { "id": 3, "categoryId": 2, "name": "repair" },
-    { "id": 4, "categoryId": 2, "name": "legal" }
+    {
+      "id": 1,
+      "categoryId": 1,
+      "name": "clothes"
+    },
+    {
+      "id": 2,
+      "categoryId": 1,
+      "name": "food"
+    },
+    {
+      "id": 3,
+      "categoryId": 2,
+      "name": "repair"
+    },
+    {
+      "id": 4,
+      "categoryId": 2,
+      "name": "legal"
+    }
   ],
   "countries": [
-      { "id": 1, "name": "Словаччина" },
-      { "id": 2, "name": "Польша" }
+    {
+      "id": 1,
+      "name": "Словаччина"
+    },
+    {
+      "id": 2,
+      "name": "Польша"
+    }
   ],
   "cities": [
-    { "id": 1, "countryId": 1, "name": "Братислава" },
-    { "id": 2, "countryId": 1, "name": "Кошице" },
-    { "id": 3, "countryId": 1, "name": "Банська-Бистриця" },
-    { "id": 4, "countryId": 1, "name": "Нітра" },
-    { "id": 5, "countryId": 1, "name": "Трнава" },
-    { "id": 6, "countryId": 1, "name": "Нове Замки" },
-    { "id": 7, "countryId": 2, "name": "Варшава" },
-    { "id": 8, "countryId": 2, "name": "Краків" },
-    { "id": 9, "countryId": 2, "name": "Вроцлав" },
-    { "id": 10, "countryId": 2, "name": "Познань" },
-    { "id": 11, "countryId": 2, "name": "Гданськ" },
-    { "id": 12, "countryId": 2, "name": "Люблін" }
+    {
+      "id": 1,
+      "countryId": 1,
+      "name": "Братислава"
+    },
+    {
+      "id": 2,
+      "countryId": 1,
+      "name": "Кошице"
+    },
+    {
+      "id": 3,
+      "countryId": 1,
+      "name": "Банська-Бистриця"
+    },
+    {
+      "id": 4,
+      "countryId": 1,
+      "name": "Нітра"
+    },
+    {
+      "id": 5,
+      "countryId": 1,
+      "name": "Трнава"
+    },
+    {
+      "id": 6,
+      "countryId": 1,
+      "name": "Нове Замки"
+    },
+    {
+      "id": 7,
+      "countryId": 2,
+      "name": "Варшава"
+    },
+    {
+      "id": 8,
+      "countryId": 2,
+      "name": "Краків"
+    },
+    {
+      "id": 9,
+      "countryId": 2,
+      "name": "Вроцлав"
+    },
+    {
+      "id": 10,
+      "countryId": 2,
+      "name": "Познань"
+    },
+    {
+      "id": 11,
+      "countryId": 2,
+      "name": "Гданськ"
+    },
+    {
+      "id": 12,
+      "countryId": 2,
+      "name": "Люблін"
+    }
   ],
   "products": [
-   {
-    "id": 1,
-    "categoryId": 1,
-    "subcategoryId": 1,
-    "name": "Вишиванка",
-    "price": 1484,
-    "currency": "UAH",
-    "rating": 4.5,
-    "ratingCount": 35,
-    "images": [
-      "assets/images/item-image.png"
-    ],
-    "shortDescription": "Опис товару 'Вишиванка' ручної роботи.",
-    "fullDescription": "Вишиванка виготовлений з любов'ю та натуральних матеріалів...",
-    "isMadeByUkrainian": false,
-    "isPremiumProduct": true,
-    "updatedAt": "2025-07-21T14:00:00Z",
-    "createdAt": "2025-07-20T12:00:00Z",
-    "countryId": 1,
-    "cityId": 1,
-    "seller": {
-      "name": "Оксана",
-      "contacts": {
-        "phone": "+380501234567",
-        "address": "вул. Хрещатик, 50",
-        "mapCoordinates": {
-          "lat": 50.4501,
-          "lng": 30.5234
-        }
-      },
-      "workingHours": {
-        "Пн-Пт": "9:00-18:00"
-      },
-      "socialLinks": [
-        {
-          "type": "facebook",
-          "url": "https://facebook.com/example"
-        },
-        {
-          "type": "instagram",
-          "url": "https://instagram.com/example"
-        }
+    {
+      "id": 1,
+      "categoryId": 1,
+      "subcategoryId": 1,
+      "name": "Вишиванка",
+      "price": 1484,
+      "currency": "UAH",
+      "rating": 4.5,
+      "ratingCount": 35,
+      "images": [
+        "assets/images/item-image.png"
       ],
-      "extraFields": {
-        "Матеріал": "Льон",
-        "Розмір": "S"
-      }
-    },
-    "comments": [
-      1,
-      2
-    ]
-  },
-  {
-    "id": 2,
-    "categoryId": 2,
-    "subcategoryId": 2,
-    "name": "Глиняний глечик",
-    "price": 1907,
-    "currency": "UAH",
-    "rating": 4.0,
-    "ratingCount": 96,
-    "images": [
-      "assets/images/item-image.png"
-    ],
-    "shortDescription": "Опис товару 'Глиняний глечик' ручної роботи.",
-    "fullDescription": "Глиняний глечик виготовлений з любов'ю та натуральних матеріалів...",
-    "isMadeByUkrainian": true,
-    "isPremiumProduct": false,
-    "updatedAt": "2025-07-20T18:00:00Z",
-    "createdAt": "2025-07-20T12:00:00Z",
-    "countryId": 1,
-    "cityId": 1,
-    "seller": {
-      "name": "Марія",
-      "contacts": {
-        "phone": "+380501234567",
-        "address": "вул. Хрещатик, 78",
-        "mapCoordinates": {
-          "lat": 50.4501,
-          "lng": 30.5234
-        }
-      },
-      "workingHours": {
-        "Пн-Пт": "9:00-18:00"
-      },
-      "socialLinks": [
-        {
-          "type": "facebook",
-          "url": "https://facebook.com/example"
+      "shortDescription": "Опис товару 'Вишиванка' ручної роботи.",
+      "fullDescription": "Вишиванка виготовлений з любов'ю та натуральних матеріалів...",
+      "isMadeByUkrainian": false,
+      "isPremiumProduct": true,
+      "updatedAt": "2025-07-21T14:00:00Z",
+      "createdAt": "2025-07-20T12:00:00Z",
+      "countryId": 1,
+      "cityId": 1,
+      "seller": {
+        "name": "Оксана",
+        "contacts": {
+          "phone": "+380501234567",
+          "address": "вул. Хрещатик, 50",
+          "mapCoordinates": {
+            "lat": 50.4501,
+            "lng": 30.5234
+          }
         },
-        {
-          "type": "instagram",
-          "url": "https://instagram.com/example"
-        }
-      ],
-      "extraFields": {
-        "Матеріал": "Льон",
-        "Розмір": "L"
-      }
-    },
-    "comments": [
-      1,
-      2
-    ]
-  },
-  {
-    "id": 3,
-    "categoryId": 1,
-    "subcategoryId": 2,
-    "name": "Сувенірна тарілка",
-    "price": 293,
-    "currency": "UAH",
-    "rating": 4.1,
-    "ratingCount": 25,
-    "images": [
-      "assets/images/item-image.png"
-    ],
-    "shortDescription": "Опис товару 'Сувенірна тарілка' ручної роботи.",
-    "fullDescription": "Сувенірна тарілка виготовлений з любов'ю та натуральних матеріалів...",
-    "isMadeByUkrainian": false,
-    "isPremiumProduct": true,
-    "updatedAt": "2025-07-22T19:00:00Z",
-    "createdAt": "2025-07-20T12:00:00Z",
-    "countryId": 1,
-    "cityId": 1,
-    "seller": {
-      "name": "Марія",
-      "contacts": {
-        "phone": "+380501234567",
-        "address": "вул. Хрещатик, 37",
-        "mapCoordinates": {
-          "lat": 50.4501,
-          "lng": 30.5234
-        }
-      },
-      "workingHours": {
-        "Пн-Пт": "9:00-18:00"
-      },
-      "socialLinks": [
-        {
-          "type": "facebook",
-          "url": "https://facebook.com/example"
+        "workingHours": {
+          "Пн-Пт": "9:00-18:00"
         },
-        {
-          "type": "instagram",
-          "url": "https://instagram.com/example"
+        "socialLinks": [
+          {
+            "type": "facebook",
+            "url": "https://facebook.com/example"
+          },
+          {
+            "type": "instagram",
+            "url": "https://instagram.com/example"
+          }
+        ],
+        "extraFields": {
+          "Матеріал": "Льон",
+          "Розмір": "S"
         }
+      },
+      "comments": [
+        1,
+        2
       ],
-      "extraFields": {
-        "Матеріал": "Льон",
-        "Розмір": "M"
-      }
+      "slug": "vyshyvanka"
     },
-    "comments": [
-      1,
-      2
-    ]
-  },
-  {
-    "id": 4,
-    "categoryId": 1,
-    "subcategoryId": 1,
-    "name": "Дерев'яна іграшка",
-    "price": 1531,
-    "currency": "UAH",
-    "rating": 4.2,
-    "ratingCount": 37,
-    "images": [
-      "assets/images/item-image.png"
-    ],
-    "shortDescription": "Опис товару 'Дерев'яна іграшка' ручної роботи.",
-    "fullDescription": "Дерев'яна іграшка виготовлений з любов'ю та натуральних матеріалів...",
-    "isMadeByUkrainian": false,
-    "isPremiumProduct": false,
-    "updatedAt": "2025-07-20T22:00:00Z",
-    "createdAt": "2025-07-20T12:00:00Z",
-    "countryId": 1,
-    "cityId": 1,
-    "seller": {
-      "name": "Оксана",
-      "contacts": {
-        "phone": "+380501234567",
-        "address": "вул. Хрещатик, 34",
-        "mapCoordinates": {
-          "lat": 50.4501,
-          "lng": 30.5234
-        }
-      },
-      "workingHours": {
-        "Пн-Пт": "9:00-18:00"
-      },
-      "socialLinks": [
-        {
-          "type": "facebook",
-          "url": "https://facebook.com/example"
+    {
+      "id": 2,
+      "categoryId": 2,
+      "subcategoryId": 2,
+      "name": "Глиняний глечик",
+      "price": 1907,
+      "currency": "UAH",
+      "rating": 4.0,
+      "ratingCount": 96,
+      "images": [
+        "assets/images/item-image.png"
+      ],
+      "shortDescription": "Опис товару 'Глиняний глечик' ручної роботи.",
+      "fullDescription": "Глиняний глечик виготовлений з любов'ю та натуральних матеріалів...",
+      "isMadeByUkrainian": true,
+      "isPremiumProduct": false,
+      "updatedAt": "2025-07-20T18:00:00Z",
+      "createdAt": "2025-07-20T12:00:00Z",
+      "countryId": 1,
+      "cityId": 1,
+      "seller": {
+        "name": "Марія",
+        "contacts": {
+          "phone": "+380501234567",
+          "address": "вул. Хрещатик, 78",
+          "mapCoordinates": {
+            "lat": 50.4501,
+            "lng": 30.5234
+          }
         },
-        {
-          "type": "instagram",
-          "url": "https://instagram.com/example"
-        }
-      ],
-      "extraFields": {
-        "Матеріал": "Льон",
-        "Розмір": "XL"
-      }
-    },
-    "comments": [
-      1,
-      2
-    ]
-  },
-  {
-    "id": 5,
-    "categoryId": 2,
-    "subcategoryId": 1,
-    "name": "Лялька-мотанка",
-    "price": 938,
-    "currency": "UAH",
-    "rating": 4.5,
-    "ratingCount": 14,
-    "images": [
-      "assets/images/item-image.png"
-    ],
-    "shortDescription": "Опис товару 'Лялька-мотанка' ручної роботи.",
-    "fullDescription": "Лялька-мотанка виготовлений з любов'ю та натуральних матеріалів...",
-    "isMadeByUkrainian": true,
-    "isPremiumProduct": false,
-    "updatedAt": "2025-07-21T21:00:00Z",
-    "createdAt": "2025-07-20T12:00:00Z",
-    "countryId": 1,
-    "cityId": 1,
-    "seller": {
-      "name": "Іван",
-      "contacts": {
-        "phone": "+380501234567",
-        "address": "вул. Хрещатик, 4",
-        "mapCoordinates": {
-          "lat": 50.4501,
-          "lng": 30.5234
-        }
-      },
-      "workingHours": {
-        "Пн-Пт": "9:00-18:00"
-      },
-      "socialLinks": [
-        {
-          "type": "facebook",
-          "url": "https://facebook.com/example"
+        "workingHours": {
+          "Пн-Пт": "9:00-18:00"
         },
-        {
-          "type": "instagram",
-          "url": "https://instagram.com/example"
+        "socialLinks": [
+          {
+            "type": "facebook",
+            "url": "https://facebook.com/example"
+          },
+          {
+            "type": "instagram",
+            "url": "https://instagram.com/example"
+          }
+        ],
+        "extraFields": {
+          "Матеріал": "Льон",
+          "Розмір": "L"
         }
+      },
+      "comments": [
+        1,
+        2
       ],
-      "extraFields": {
-        "Матеріал": "Льон",
-        "Розмір": "XL"
-      }
+      "slug": "hlynianyi-hlechyk"
     },
-    "comments": [
-      1,
-      2
-    ]
-  },
-  {
-    "id": 6,
-    "categoryId": 2,
-    "subcategoryId": 2,
-    "name": "Писанка",
-    "price": 779,
-    "currency": "UAH",
-    "rating": 4.5,
-    "ratingCount": 73,
-    "images": [
-      "assets/images/item-image.png"
-    ],
-    "shortDescription": "Опис товару 'Писанка' ручної роботи.",
-    "fullDescription": "Писанка виготовлений з любов'ю та натуральних матеріалів...",
-    "isMadeByUkrainian": false,
-    "isPremiumProduct": true,
-    "updatedAt": "2025-07-20T20:00:00Z",
-    "createdAt": "2025-07-20T12:00:00Z",
-    "countryId": 1,
-    "cityId": 1,
-    "seller": {
-      "name": "Наталя",
-      "contacts": {
-        "phone": "+380501234567",
-        "address": "вул. Хрещатик, 64",
-        "mapCoordinates": {
-          "lat": 50.4501,
-          "lng": 30.5234
-        }
-      },
-      "workingHours": {
-        "Пн-Пт": "9:00-18:00"
-      },
-      "socialLinks": [
-        {
-          "type": "facebook",
-          "url": "https://facebook.com/example"
+    {
+      "id": 3,
+      "categoryId": 1,
+      "subcategoryId": 2,
+      "name": "Сувенірна тарілка",
+      "price": 293,
+      "currency": "UAH",
+      "rating": 4.1,
+      "ratingCount": 25,
+      "images": [
+        "assets/images/item-image.png"
+      ],
+      "shortDescription": "Опис товару 'Сувенірна тарілка' ручної роботи.",
+      "fullDescription": "Сувенірна тарілка виготовлений з любов'ю та натуральних матеріалів...",
+      "isMadeByUkrainian": false,
+      "isPremiumProduct": true,
+      "updatedAt": "2025-07-22T19:00:00Z",
+      "createdAt": "2025-07-20T12:00:00Z",
+      "countryId": 1,
+      "cityId": 1,
+      "seller": {
+        "name": "Марія",
+        "contacts": {
+          "phone": "+380501234567",
+          "address": "вул. Хрещатик, 37",
+          "mapCoordinates": {
+            "lat": 50.4501,
+            "lng": 30.5234
+          }
         },
-        {
-          "type": "instagram",
-          "url": "https://instagram.com/example"
-        }
-      ],
-      "extraFields": {
-        "Матеріал": "Льон",
-        "Розмір": "L"
-      }
-    },
-    "comments": [
-      1,
-      2
-    ]
-  },
-  {
-    "id": 7,
-    "categoryId": 1,
-    "subcategoryId": 1,
-    "name": "Картина",
-    "price": 1000,
-    "currency": "UAH",
-    "rating": 3.9,
-    "ratingCount": 83,
-    "images": [
-      "assets/images/item-image.png"
-    ],
-    "shortDescription": "Опис товару 'Картина' ручної роботи.",
-    "fullDescription": "Картина виготовлений з любов'ю та натуральних матеріалів...",
-    "isMadeByUkrainian": false,
-    "isPremiumProduct": false,
-    "updatedAt": "2025-07-22T15:00:00Z",
-    "createdAt": "2025-07-20T12:00:00Z",
-    "countryId": 1,
-    "cityId": 1,
-    "seller": {
-      "name": "Софія",
-      "contacts": {
-        "phone": "+380501234567",
-        "address": "вул. Хрещатик, 88",
-        "mapCoordinates": {
-          "lat": 50.4501,
-          "lng": 30.5234
-        }
-      },
-      "workingHours": {
-        "Пн-Пт": "9:00-18:00"
-      },
-      "socialLinks": [
-        {
-          "type": "facebook",
-          "url": "https://facebook.com/example"
+        "workingHours": {
+          "Пн-Пт": "9:00-18:00"
         },
-        {
-          "type": "instagram",
-          "url": "https://instagram.com/example"
+        "socialLinks": [
+          {
+            "type": "facebook",
+            "url": "https://facebook.com/example"
+          },
+          {
+            "type": "instagram",
+            "url": "https://instagram.com/example"
+          }
+        ],
+        "extraFields": {
+          "Матеріал": "Льон",
+          "Розмір": "M"
         }
+      },
+      "comments": [
+        1,
+        2
       ],
-      "extraFields": {
-        "Матеріал": "Льон",
-        "Розмір": "M"
-      }
+      "slug": "suvenirna-tarilka"
     },
-    "comments": [
-      1,
-      2
-    ]
-  },
-  {
-    "id": 8,
-    "categoryId": 1,
-    "subcategoryId": 2,
-    "name": "Свічка з вощини",
-    "price": 1662,
-    "currency": "UAH",
-    "rating": 3.8,
-    "ratingCount": 64,
-    "images": [
-      "assets/images/item-image.png"
-    ],
-    "shortDescription": "Опис товару 'Свічка з вощини' ручної роботи.",
-    "fullDescription": "Свічка з вощини виготовлений з любов'ю та натуральних матеріалів...",
-    "isMadeByUkrainian": true,
-    "isPremiumProduct": true,
-    "updatedAt": "2025-07-20T18:00:00Z",
-    "createdAt": "2025-07-20T12:00:00Z",
-    "countryId": 1,
-    "cityId": 1,
-    "seller": {
-      "name": "Тарас",
-      "contacts": {
-        "phone": "+380501234567",
-        "address": "вул. Хрещатик, 61",
-        "mapCoordinates": {
-          "lat": 50.4501,
-          "lng": 30.5234
-        }
-      },
-      "workingHours": {
-        "Пн-Пт": "9:00-18:00"
-      },
-      "socialLinks": [
-        {
-          "type": "facebook",
-          "url": "https://facebook.com/example"
+    {
+      "id": 4,
+      "categoryId": 1,
+      "subcategoryId": 1,
+      "name": "Дерев'яна іграшка",
+      "price": 1531,
+      "currency": "UAH",
+      "rating": 4.2,
+      "ratingCount": 37,
+      "images": [
+        "assets/images/item-image.png"
+      ],
+      "shortDescription": "Опис товару 'Дерев'яна іграшка' ручної роботи.",
+      "fullDescription": "Дерев'яна іграшка виготовлений з любов'ю та натуральних матеріалів...",
+      "isMadeByUkrainian": false,
+      "isPremiumProduct": false,
+      "updatedAt": "2025-07-20T22:00:00Z",
+      "createdAt": "2025-07-20T12:00:00Z",
+      "countryId": 1,
+      "cityId": 1,
+      "seller": {
+        "name": "Оксана",
+        "contacts": {
+          "phone": "+380501234567",
+          "address": "вул. Хрещатик, 34",
+          "mapCoordinates": {
+            "lat": 50.4501,
+            "lng": 30.5234
+          }
         },
-        {
-          "type": "instagram",
-          "url": "https://instagram.com/example"
-        }
-      ],
-      "extraFields": {
-        "Матеріал": "Льон",
-        "Розмір": "XL"
-      }
-    },
-    "comments": [
-      1,
-      2
-    ]
-  },
-  {
-    "id": 9,
-    "categoryId": 2,
-    "subcategoryId": 1,
-    "name": "Плед з вовни",
-    "price": 808,
-    "currency": "UAH",
-    "rating": 4.6,
-    "ratingCount": 12,
-    "images": [
-      "assets/images/item-image.png"
-    ],
-    "shortDescription": "Опис товару 'Плед з вовни' ручної роботи.",
-    "fullDescription": "Плед з вовни виготовлений з любов'ю та натуральних матеріалів...",
-    "isMadeByUkrainian": true,
-    "isPremiumProduct": true,
-    "updatedAt": "2025-07-22T15:00:00Z",
-    "createdAt": "2025-07-20T12:00:00Z",
-    "countryId": 1,
-    "cityId": 1,
-    "seller": {
-      "name": "Олена",
-      "contacts": {
-        "phone": "+380501234567",
-        "address": "вул. Хрещатик, 62",
-        "mapCoordinates": {
-          "lat": 50.4501,
-          "lng": 30.5234
-        }
-      },
-      "workingHours": {
-        "Пн-Пт": "9:00-18:00"
-      },
-      "socialLinks": [
-        {
-          "type": "facebook",
-          "url": "https://facebook.com/example"
+        "workingHours": {
+          "Пн-Пт": "9:00-18:00"
         },
-        {
-          "type": "instagram",
-          "url": "https://instagram.com/example"
+        "socialLinks": [
+          {
+            "type": "facebook",
+            "url": "https://facebook.com/example"
+          },
+          {
+            "type": "instagram",
+            "url": "https://instagram.com/example"
+          }
+        ],
+        "extraFields": {
+          "Матеріал": "Льон",
+          "Розмір": "XL"
         }
+      },
+      "comments": [
+        1,
+        2
       ],
-      "extraFields": {
-        "Матеріал": "Льон",
-        "Розмір": "L"
-      }
+      "slug": "dereviana-ihrashka"
     },
-    "comments": [
-      1,
-      2
-    ]
-  },
-  {
-    "id": 10,
-    "categoryId": 2,
-    "subcategoryId": 2,
-    "name": "Прикраса з бісеру",
-    "price": 1517,
-    "currency": "UAH",
-    "rating": 4.2,
-    "ratingCount": 56,
-    "images": [
-      "assets/images/item-image.png"
-    ],
-    "shortDescription": "Опис товару 'Прикраса з бісеру' ручної роботи.",
-    "fullDescription": "Прикраса з бісеру виготовлений з любов'ю та натуральних матеріалів...",
-    "isMadeByUkrainian": true,
-    "isPremiumProduct": true,
-    "updatedAt": "2025-07-21T12:00:00Z",
-    "createdAt": "2025-07-20T12:00:00Z",
-    "countryId": 1,
-    "cityId": 1,
-    "seller": {
-      "name": "Оксана",
-      "contacts": {
-        "phone": "+380501234567",
-        "address": "вул. Хрещатик, 98",
-        "mapCoordinates": {
-          "lat": 50.4501,
-          "lng": 30.5234
-        }
-      },
-      "workingHours": {
-        "Пн-Пт": "9:00-18:00"
-      },
-      "socialLinks": [
-        {
-          "type": "facebook",
-          "url": "https://facebook.com/example"
+    {
+      "id": 5,
+      "categoryId": 2,
+      "subcategoryId": 1,
+      "name": "Лялька-мотанка",
+      "price": 938,
+      "currency": "UAH",
+      "rating": 4.5,
+      "ratingCount": 14,
+      "images": [
+        "assets/images/item-image.png"
+      ],
+      "shortDescription": "Опис товару 'Лялька-мотанка' ручної роботи.",
+      "fullDescription": "Лялька-мотанка виготовлений з любов'ю та натуральних матеріалів...",
+      "isMadeByUkrainian": true,
+      "isPremiumProduct": false,
+      "updatedAt": "2025-07-21T21:00:00Z",
+      "createdAt": "2025-07-20T12:00:00Z",
+      "countryId": 1,
+      "cityId": 1,
+      "seller": {
+        "name": "Іван",
+        "contacts": {
+          "phone": "+380501234567",
+          "address": "вул. Хрещатик, 4",
+          "mapCoordinates": {
+            "lat": 50.4501,
+            "lng": 30.5234
+          }
         },
-        {
-          "type": "instagram",
-          "url": "https://instagram.com/example"
-        }
-      ],
-      "extraFields": {
-        "Матеріал": "Льон",
-        "Розмір": "S"
-      }
-    },
-    "comments": [
-      1,
-      2
-    ]
-  },
-  {
-    "id": 11,
-    "categoryId": 1,
-    "subcategoryId": 2,
-    "name": "Рушник",
-    "price": 1242,
-    "currency": "UAH",
-    "rating": 4.9,
-    "ratingCount": 38,
-    "images": [
-      "assets/images/item-image.png"
-    ],
-    "shortDescription": "Опис товару 'Рушник' ручної роботи.",
-    "fullDescription": "Рушник виготовлений з любов'ю та натуральних матеріалів...",
-    "isMadeByUkrainian": false,
-    "isPremiumProduct": true,
-    "updatedAt": "2025-07-22T18:00:00Z",
-    "createdAt": "2025-07-20T12:00:00Z",
-    "countryId": 1,
-    "cityId": 1,
-    "seller": {
-      "name": "Тарас",
-      "contacts": {
-        "phone": "+380501234567",
-        "address": "вул. Хрещатик, 71",
-        "mapCoordinates": {
-          "lat": 50.4501,
-          "lng": 30.5234
-        }
-      },
-      "workingHours": {
-        "Пн-Пт": "9:00-18:00"
-      },
-      "socialLinks": [
-        {
-          "type": "facebook",
-          "url": "https://facebook.com/example"
+        "workingHours": {
+          "Пн-Пт": "9:00-18:00"
         },
-        {
-          "type": "instagram",
-          "url": "https://instagram.com/example"
+        "socialLinks": [
+          {
+            "type": "facebook",
+            "url": "https://facebook.com/example"
+          },
+          {
+            "type": "instagram",
+            "url": "https://instagram.com/example"
+          }
+        ],
+        "extraFields": {
+          "Матеріал": "Льон",
+          "Розмір": "XL"
         }
+      },
+      "comments": [
+        1,
+        2
       ],
-      "extraFields": {
-        "Матеріал": "Льон",
-        "Розмір": "M"
-      }
+      "slug": "lialka-motanka"
     },
-    "comments": [
-      1,
-      2
-    ]
-  },
-  {
-    "id": 12,
-    "categoryId": 2,
-    "subcategoryId": 1,
-    "name": "Керамічне горнятко",
-    "price": 1633,
-    "currency": "UAH",
-    "rating": 4.4,
-    "ratingCount": 74,
-    "images": [
-      "assets/images/item-image.png"
-    ],
-    "shortDescription": "Опис товару 'Керамічне горнятко' ручної роботи.",
-    "fullDescription": "Керамічне горнятко виготовлений з любов'ю та натуральних матеріалів...",
-    "isMadeByUkrainian": true,
-    "isPremiumProduct": false,
-    "updatedAt": "2025-07-20T12:00:00Z",
-    "createdAt": "2025-07-20T12:00:00Z",
-    "countryId": 1,
-    "cityId": 1,
-    "seller": {
-      "name": "Марія",
-      "contacts": {
-        "phone": "+380501234567",
-        "address": "вул. Хрещатик, 85",
-        "mapCoordinates": {
-          "lat": 50.4501,
-          "lng": 30.5234
-        }
-      },
-      "workingHours": {
-        "Пн-Пт": "9:00-18:00"
-      },
-      "socialLinks": [
-        {
-          "type": "facebook",
-          "url": "https://facebook.com/example"
+    {
+      "id": 6,
+      "categoryId": 2,
+      "subcategoryId": 2,
+      "name": "Писанка",
+      "price": 779,
+      "currency": "UAH",
+      "rating": 4.5,
+      "ratingCount": 73,
+      "images": [
+        "assets/images/item-image.png"
+      ],
+      "shortDescription": "Опис товару 'Писанка' ручної роботи.",
+      "fullDescription": "Писанка виготовлений з любов'ю та натуральних матеріалів...",
+      "isMadeByUkrainian": false,
+      "isPremiumProduct": true,
+      "updatedAt": "2025-07-20T20:00:00Z",
+      "createdAt": "2025-07-20T12:00:00Z",
+      "countryId": 1,
+      "cityId": 1,
+      "seller": {
+        "name": "Наталя",
+        "contacts": {
+          "phone": "+380501234567",
+          "address": "вул. Хрещатик, 64",
+          "mapCoordinates": {
+            "lat": 50.4501,
+            "lng": 30.5234
+          }
         },
-        {
-          "type": "instagram",
-          "url": "https://instagram.com/example"
-        }
-      ],
-      "extraFields": {
-        "Матеріал": "Льон",
-        "Розмір": "XL"
-      }
-    },
-    "comments": [
-      1,
-      2
-    ]
-  },
-  {
-    "id": 13,
-    "categoryId": 2,
-    "subcategoryId": 1,
-    "name": "Кулон",
-    "price": 1840,
-    "currency": "UAH",
-    "rating": 4.7,
-    "ratingCount": 20,
-    "images": [
-      "assets/images/item-image.png"
-    ],
-    "shortDescription": "Опис товару 'Кулон' ручної роботи.",
-    "fullDescription": "Кулон виготовлений з любов'ю та натуральних матеріалів...",
-    "isMadeByUkrainian": true,
-    "isPremiumProduct": true,
-    "updatedAt": "2025-07-20T18:00:00Z",
-    "createdAt": "2025-07-20T12:00:00Z",
-    "countryId": 1,
-    "cityId": 1,
-    "seller": {
-      "name": "Марія",
-      "contacts": {
-        "phone": "+380501234567",
-        "address": "вул. Хрещатик, 36",
-        "mapCoordinates": {
-          "lat": 50.4501,
-          "lng": 30.5234
-        }
-      },
-      "workingHours": {
-        "Пн-Пт": "9:00-18:00"
-      },
-      "socialLinks": [
-        {
-          "type": "facebook",
-          "url": "https://facebook.com/example"
+        "workingHours": {
+          "Пн-Пт": "9:00-18:00"
         },
-        {
-          "type": "instagram",
-          "url": "https://instagram.com/example"
+        "socialLinks": [
+          {
+            "type": "facebook",
+            "url": "https://facebook.com/example"
+          },
+          {
+            "type": "instagram",
+            "url": "https://instagram.com/example"
+          }
+        ],
+        "extraFields": {
+          "Матеріал": "Льон",
+          "Розмір": "L"
         }
+      },
+      "comments": [
+        1,
+        2
       ],
-      "extraFields": {
-        "Матеріал": "Льон",
-        "Розмір": "L"
-      }
+      "slug": "pysanka"
     },
-    "comments": [
-      1,
-      2
-    ]
-  },
-  {
-    "id": 14,
-    "categoryId": 2,
-    "subcategoryId": 2,
-    "name": "Вишита скатертина",
-    "price": 959,
-    "currency": "UAH",
-    "rating": 4.9,
-    "ratingCount": 91,
-    "images": [
-      "assets/images/item-image.png"
-    ],
-    "shortDescription": "Опис товару 'Вишита скатертина' ручної роботи.",
-    "fullDescription": "Вишита скатертина виготовлений з любов'ю та натуральних матеріалів...",
-    "isMadeByUkrainian": false,
-    "isPremiumProduct": true,
-    "updatedAt": "2025-07-22T15:00:00Z",
-    "createdAt": "2025-07-20T12:00:00Z",
-    "countryId": 1,
-    "cityId": 1,
-    "seller": {
-      "name": "Наталя",
-      "contacts": {
-        "phone": "+380501234567",
-        "address": "вул. Хрещатик, 68",
-        "mapCoordinates": {
-          "lat": 50.4501,
-          "lng": 30.5234
-        }
-      },
-      "workingHours": {
-        "Пн-Пт": "9:00-18:00"
-      },
-      "socialLinks": [
-        {
-          "type": "facebook",
-          "url": "https://facebook.com/example"
+    {
+      "id": 7,
+      "categoryId": 1,
+      "subcategoryId": 1,
+      "name": "Картина",
+      "price": 1000,
+      "currency": "UAH",
+      "rating": 3.9,
+      "ratingCount": 83,
+      "images": [
+        "assets/images/item-image.png"
+      ],
+      "shortDescription": "Опис товару 'Картина' ручної роботи.",
+      "fullDescription": "Картина виготовлений з любов'ю та натуральних матеріалів...",
+      "isMadeByUkrainian": false,
+      "isPremiumProduct": false,
+      "updatedAt": "2025-07-22T15:00:00Z",
+      "createdAt": "2025-07-20T12:00:00Z",
+      "countryId": 1,
+      "cityId": 1,
+      "seller": {
+        "name": "Софія",
+        "contacts": {
+          "phone": "+380501234567",
+          "address": "вул. Хрещатик, 88",
+          "mapCoordinates": {
+            "lat": 50.4501,
+            "lng": 30.5234
+          }
         },
-        {
-          "type": "instagram",
-          "url": "https://instagram.com/example"
-        }
-      ],
-      "extraFields": {
-        "Матеріал": "Льон",
-        "Розмір": "S"
-      }
-    },
-    "comments": [
-      1,
-      2
-    ]
-  },
-  {
-    "id": 15,
-    "categoryId": 2,
-    "subcategoryId": 1,
-    "name": "Сорочка",
-    "price": 1362,
-    "currency": "UAH",
-    "rating": 4.3,
-    "ratingCount": 5,
-    "images": [
-      "assets/images/item-image.png"
-    ],
-    "shortDescription": "Опис товару 'Сорочка' ручної роботи.",
-    "fullDescription": "Сорочка виготовлений з любов'ю та натуральних матеріалів...",
-    "isMadeByUkrainian": false,
-    "isPremiumProduct": false,
-    "updatedAt": "2025-07-20T19:00:00Z",
-    "createdAt": "2025-07-20T12:00:00Z",
-    "countryId": 1,
-    "cityId": 1,
-    "seller": {
-      "name": "Наталя",
-      "contacts": {
-        "phone": "+380501234567",
-        "address": "вул. Хрещатик, 84",
-        "mapCoordinates": {
-          "lat": 50.4501,
-          "lng": 30.5234
-        }
-      },
-      "workingHours": {
-        "Пн-Пт": "9:00-18:00"
-      },
-      "socialLinks": [
-        {
-          "type": "facebook",
-          "url": "https://facebook.com/example"
+        "workingHours": {
+          "Пн-Пт": "9:00-18:00"
         },
-        {
-          "type": "instagram",
-          "url": "https://instagram.com/example"
+        "socialLinks": [
+          {
+            "type": "facebook",
+            "url": "https://facebook.com/example"
+          },
+          {
+            "type": "instagram",
+            "url": "https://instagram.com/example"
+          }
+        ],
+        "extraFields": {
+          "Матеріал": "Льон",
+          "Розмір": "M"
         }
+      },
+      "comments": [
+        1,
+        2
       ],
-      "extraFields": {
-        "Матеріал": "Льон",
-        "Розмір": "L"
-      }
+      "slug": "kartyna"
     },
-    "comments": [
-      1,
-      2
-    ]
-  },
-  {
-    "id": 16,
-    "categoryId": 1,
-    "subcategoryId": 2,
-    "name": "Сумка з льону",
-    "price": 113,
-    "currency": "UAH",
-    "rating": 4.0,
-    "ratingCount": 24,
-    "images": [
-      "assets/images/item-image.png"
-    ],
-    "shortDescription": "Опис товару 'Сумка з льону' ручної роботи.",
-    "fullDescription": "Сумка з льону виготовлений з любов'ю та натуральних матеріалів...",
-    "isMadeByUkrainian": false,
-    "isPremiumProduct": false,
-    "updatedAt": "2025-07-22T16:00:00Z",
-    "createdAt": "2025-07-20T12:00:00Z",
-    "countryId": 1,
-    "cityId": 1,
-    "seller": {
-      "name": "Оксана",
-      "contacts": {
-        "phone": "+380501234567",
-        "address": "вул. Хрещатик, 7",
-        "mapCoordinates": {
-          "lat": 50.4501,
-          "lng": 30.5234
-        }
-      },
-      "workingHours": {
-        "Пн-Пт": "9:00-18:00"
-      },
-      "socialLinks": [
-        {
-          "type": "facebook",
-          "url": "https://facebook.com/example"
+    {
+      "id": 8,
+      "categoryId": 1,
+      "subcategoryId": 2,
+      "name": "Свічка з вощини",
+      "price": 1662,
+      "currency": "UAH",
+      "rating": 3.8,
+      "ratingCount": 64,
+      "images": [
+        "assets/images/item-image.png"
+      ],
+      "shortDescription": "Опис товару 'Свічка з вощини' ручної роботи.",
+      "fullDescription": "Свічка з вощини виготовлений з любов'ю та натуральних матеріалів...",
+      "isMadeByUkrainian": true,
+      "isPremiumProduct": true,
+      "updatedAt": "2025-07-20T18:00:00Z",
+      "createdAt": "2025-07-20T12:00:00Z",
+      "countryId": 1,
+      "cityId": 1,
+      "seller": {
+        "name": "Тарас",
+        "contacts": {
+          "phone": "+380501234567",
+          "address": "вул. Хрещатик, 61",
+          "mapCoordinates": {
+            "lat": 50.4501,
+            "lng": 30.5234
+          }
         },
-        {
-          "type": "instagram",
-          "url": "https://instagram.com/example"
-        }
-      ],
-      "extraFields": {
-        "Матеріал": "Льон",
-        "Розмір": "S"
-      }
-    },
-    "comments": [
-      1,
-      2
-    ]
-  },
-  {
-    "id": 17,
-    "categoryId": 2,
-    "subcategoryId": 1,
-    "name": "Пояс",
-    "price": 1057,
-    "currency": "UAH",
-    "rating": 4.6,
-    "ratingCount": 87,
-    "images": [
-      "assets/images/item-image.png"
-    ],
-    "shortDescription": "Опис товару 'Пояс' ручної роботи.",
-    "fullDescription": "Пояс виготовлений з любов'ю та натуральних матеріалів...",
-    "isMadeByUkrainian": false,
-    "isPremiumProduct": true,
-    "updatedAt": "2025-07-21T21:00:00Z",
-    "createdAt": "2025-07-20T12:00:00Z",
-    "countryId": 1,
-    "cityId": 1,
-    "seller": {
-      "name": "Марія",
-      "contacts": {
-        "phone": "+380501234567",
-        "address": "вул. Хрещатик, 50",
-        "mapCoordinates": {
-          "lat": 50.4501,
-          "lng": 30.5234
-        }
-      },
-      "workingHours": {
-        "Пн-Пт": "9:00-18:00"
-      },
-      "socialLinks": [
-        {
-          "type": "facebook",
-          "url": "https://facebook.com/example"
+        "workingHours": {
+          "Пн-Пт": "9:00-18:00"
         },
-        {
-          "type": "instagram",
-          "url": "https://instagram.com/example"
+        "socialLinks": [
+          {
+            "type": "facebook",
+            "url": "https://facebook.com/example"
+          },
+          {
+            "type": "instagram",
+            "url": "https://instagram.com/example"
+          }
+        ],
+        "extraFields": {
+          "Матеріал": "Льон",
+          "Розмір": "XL"
         }
+      },
+      "comments": [
+        1,
+        2
       ],
-      "extraFields": {
-        "Матеріал": "Льон",
-        "Розмір": "M"
-      }
+      "slug": "svichka-z-voshchyny"
     },
-    "comments": [
-      1,
-      2
-    ]
-  },
-  {
-    "id": 18,
-    "categoryId": 1,
-    "subcategoryId": 1,
-    "name": "Блокнот ручної роботи",
-    "price": 591,
-    "currency": "UAH",
-    "rating": 4.5,
-    "ratingCount": 45,
-    "images": [
-      "assets/images/item-image.png"
-    ],
-    "shortDescription": "Опис товару 'Блокнот ручної роботи' ручної роботи.",
-    "fullDescription": "Блокнот ручної роботи виготовлений з любов'ю та натуральних матеріалів...",
-    "isMadeByUkrainian": true,
-    "isPremiumProduct": false,
-    "updatedAt": "2025-07-22T22:00:00Z",
-    "createdAt": "2025-07-20T12:00:00Z",
-    "countryId": 1,
-    "cityId": 1,
-    "seller": {
-      "name": "Оксана",
-      "contacts": {
-        "phone": "+380501234567",
-        "address": "вул. Хрещатик, 2",
-        "mapCoordinates": {
-          "lat": 50.4501,
-          "lng": 30.5234
-        }
-      },
-      "workingHours": {
-        "Пн-Пт": "9:00-18:00"
-      },
-      "socialLinks": [
-        {
-          "type": "facebook",
-          "url": "https://facebook.com/example"
+    {
+      "id": 9,
+      "categoryId": 2,
+      "subcategoryId": 1,
+      "name": "Плед з вовни",
+      "price": 808,
+      "currency": "UAH",
+      "rating": 4.6,
+      "ratingCount": 12,
+      "images": [
+        "assets/images/item-image.png"
+      ],
+      "shortDescription": "Опис товару 'Плед з вовни' ручної роботи.",
+      "fullDescription": "Плед з вовни виготовлений з любов'ю та натуральних матеріалів...",
+      "isMadeByUkrainian": true,
+      "isPremiumProduct": true,
+      "updatedAt": "2025-07-22T15:00:00Z",
+      "createdAt": "2025-07-20T12:00:00Z",
+      "countryId": 1,
+      "cityId": 1,
+      "seller": {
+        "name": "Олена",
+        "contacts": {
+          "phone": "+380501234567",
+          "address": "вул. Хрещатик, 62",
+          "mapCoordinates": {
+            "lat": 50.4501,
+            "lng": 30.5234
+          }
         },
-        {
-          "type": "instagram",
-          "url": "https://instagram.com/example"
-        }
-      ],
-      "extraFields": {
-        "Матеріал": "Льон",
-        "Розмір": "S"
-      }
-    },
-    "comments": [
-      1,
-      2
-    ]
-  },
-  {
-    "id": 19,
-    "categoryId": 2,
-    "subcategoryId": 2,
-    "name": "Косметичка",
-    "price": 381,
-    "currency": "UAH",
-    "rating": 3.6,
-    "ratingCount": 4,
-    "images": [
-      "assets/images/item-image.png"
-    ],
-    "shortDescription": "Опис товару 'Косметичка' ручної роботи.",
-    "fullDescription": "Косметичка виготовлений з любов'ю та натуральних матеріалів...",
-    "isMadeByUkrainian": true,
-    "isPremiumProduct": false,
-    "updatedAt": "2025-07-20T23:00:00Z",
-    "createdAt": "2025-07-20T12:00:00Z",
-    "countryId": 1,
-    "cityId": 1,
-    "seller": {
-      "name": "Оксана",
-      "contacts": {
-        "phone": "+380501234567",
-        "address": "вул. Хрещатик, 42",
-        "mapCoordinates": {
-          "lat": 50.4501,
-          "lng": 30.5234
-        }
-      },
-      "workingHours": {
-        "Пн-Пт": "9:00-18:00"
-      },
-      "socialLinks": [
-        {
-          "type": "facebook",
-          "url": "https://facebook.com/example"
+        "workingHours": {
+          "Пн-Пт": "9:00-18:00"
         },
-        {
-          "type": "instagram",
-          "url": "https://instagram.com/example"
+        "socialLinks": [
+          {
+            "type": "facebook",
+            "url": "https://facebook.com/example"
+          },
+          {
+            "type": "instagram",
+            "url": "https://instagram.com/example"
+          }
+        ],
+        "extraFields": {
+          "Матеріал": "Льон",
+          "Розмір": "L"
         }
+      },
+      "comments": [
+        1,
+        2
       ],
-      "extraFields": {
-        "Матеріал": "Льон",
-        "Розмір": "S"
-      }
+      "slug": "pled-z-vovny"
     },
-    "comments": [
-      1,
-      2
-    ]
-  },
-  {
-    "id": 20,
-    "categoryId": 1,
-    "subcategoryId": 1,
-    "name": "Підставка для чашки",
-    "price": 496,
-    "currency": "UAH",
-    "rating": 4.7,
-    "ratingCount": 75,
-    "images": [
-      "assets/images/item-image.png"
-    ],
-    "shortDescription": "Опис товару 'Підставка для чашки' ручної роботи.",
-    "fullDescription": "Підставка для чашки виготовлений з любов'ю та натуральних матеріалів...",
-    "isMadeByUkrainian": false,
-    "isPremiumProduct": true,
-    "updatedAt": "2025-07-23T00:00:00Z",
-    "createdAt": "2025-07-20T12:00:00Z",
-    "countryId": 1,
-    "cityId": 1,
-    "seller": {
-      "name": "Оксана",
-      "contacts": {
-        "phone": "+380501234567",
-        "address": "вул. Хрещатик, 90",
-        "mapCoordinates": {
-          "lat": 50.4501,
-          "lng": 30.5234
-        }
-      },
-      "workingHours": {
-        "Пн-Пт": "9:00-18:00"
-      },
-      "socialLinks": [
-        {
-          "type": "facebook",
-          "url": "https://facebook.com/example"
+    {
+      "id": 10,
+      "categoryId": 2,
+      "subcategoryId": 2,
+      "name": "Прикраса з бісеру",
+      "price": 1517,
+      "currency": "UAH",
+      "rating": 4.2,
+      "ratingCount": 56,
+      "images": [
+        "assets/images/item-image.png"
+      ],
+      "shortDescription": "Опис товару 'Прикраса з бісеру' ручної роботи.",
+      "fullDescription": "Прикраса з бісеру виготовлений з любов'ю та натуральних матеріалів...",
+      "isMadeByUkrainian": true,
+      "isPremiumProduct": true,
+      "updatedAt": "2025-07-21T12:00:00Z",
+      "createdAt": "2025-07-20T12:00:00Z",
+      "countryId": 1,
+      "cityId": 1,
+      "seller": {
+        "name": "Оксана",
+        "contacts": {
+          "phone": "+380501234567",
+          "address": "вул. Хрещатик, 98",
+          "mapCoordinates": {
+            "lat": 50.4501,
+            "lng": 30.5234
+          }
         },
-        {
-          "type": "instagram",
-          "url": "https://instagram.com/example"
+        "workingHours": {
+          "Пн-Пт": "9:00-18:00"
+        },
+        "socialLinks": [
+          {
+            "type": "facebook",
+            "url": "https://facebook.com/example"
+          },
+          {
+            "type": "instagram",
+            "url": "https://instagram.com/example"
+          }
+        ],
+        "extraFields": {
+          "Матеріал": "Льон",
+          "Розмір": "S"
         }
+      },
+      "comments": [
+        1,
+        2
       ],
-      "extraFields": {
-        "Матеріал": "Льон",
-        "Розмір": "L"
-      }
+      "slug": "prykrasa-z-biseru"
     },
-    "comments": [
-      1,
-      2
-    ]
-  }
+    {
+      "id": 11,
+      "categoryId": 1,
+      "subcategoryId": 2,
+      "name": "Рушник",
+      "price": 1242,
+      "currency": "UAH",
+      "rating": 4.9,
+      "ratingCount": 38,
+      "images": [
+        "assets/images/item-image.png"
+      ],
+      "shortDescription": "Опис товару 'Рушник' ручної роботи.",
+      "fullDescription": "Рушник виготовлений з любов'ю та натуральних матеріалів...",
+      "isMadeByUkrainian": false,
+      "isPremiumProduct": true,
+      "updatedAt": "2025-07-22T18:00:00Z",
+      "createdAt": "2025-07-20T12:00:00Z",
+      "countryId": 1,
+      "cityId": 1,
+      "seller": {
+        "name": "Тарас",
+        "contacts": {
+          "phone": "+380501234567",
+          "address": "вул. Хрещатик, 71",
+          "mapCoordinates": {
+            "lat": 50.4501,
+            "lng": 30.5234
+          }
+        },
+        "workingHours": {
+          "Пн-Пт": "9:00-18:00"
+        },
+        "socialLinks": [
+          {
+            "type": "facebook",
+            "url": "https://facebook.com/example"
+          },
+          {
+            "type": "instagram",
+            "url": "https://instagram.com/example"
+          }
+        ],
+        "extraFields": {
+          "Матеріал": "Льон",
+          "Розмір": "M"
+        }
+      },
+      "comments": [
+        1,
+        2
+      ],
+      "slug": "rushnyk"
+    },
+    {
+      "id": 12,
+      "categoryId": 2,
+      "subcategoryId": 1,
+      "name": "Керамічне горнятко",
+      "price": 1633,
+      "currency": "UAH",
+      "rating": 4.4,
+      "ratingCount": 74,
+      "images": [
+        "assets/images/item-image.png"
+      ],
+      "shortDescription": "Опис товару 'Керамічне горнятко' ручної роботи.",
+      "fullDescription": "Керамічне горнятко виготовлений з любов'ю та натуральних матеріалів...",
+      "isMadeByUkrainian": true,
+      "isPremiumProduct": false,
+      "updatedAt": "2025-07-20T12:00:00Z",
+      "createdAt": "2025-07-20T12:00:00Z",
+      "countryId": 1,
+      "cityId": 1,
+      "seller": {
+        "name": "Марія",
+        "contacts": {
+          "phone": "+380501234567",
+          "address": "вул. Хрещатик, 85",
+          "mapCoordinates": {
+            "lat": 50.4501,
+            "lng": 30.5234
+          }
+        },
+        "workingHours": {
+          "Пн-Пт": "9:00-18:00"
+        },
+        "socialLinks": [
+          {
+            "type": "facebook",
+            "url": "https://facebook.com/example"
+          },
+          {
+            "type": "instagram",
+            "url": "https://instagram.com/example"
+          }
+        ],
+        "extraFields": {
+          "Матеріал": "Льон",
+          "Розмір": "XL"
+        }
+      },
+      "comments": [
+        1,
+        2
+      ],
+      "slug": "keramichne-horniatko"
+    },
+    {
+      "id": 13,
+      "categoryId": 2,
+      "subcategoryId": 1,
+      "name": "Кулон",
+      "price": 1840,
+      "currency": "UAH",
+      "rating": 4.7,
+      "ratingCount": 20,
+      "images": [
+        "assets/images/item-image.png"
+      ],
+      "shortDescription": "Опис товару 'Кулон' ручної роботи.",
+      "fullDescription": "Кулон виготовлений з любов'ю та натуральних матеріалів...",
+      "isMadeByUkrainian": true,
+      "isPremiumProduct": true,
+      "updatedAt": "2025-07-20T18:00:00Z",
+      "createdAt": "2025-07-20T12:00:00Z",
+      "countryId": 1,
+      "cityId": 1,
+      "seller": {
+        "name": "Марія",
+        "contacts": {
+          "phone": "+380501234567",
+          "address": "вул. Хрещатик, 36",
+          "mapCoordinates": {
+            "lat": 50.4501,
+            "lng": 30.5234
+          }
+        },
+        "workingHours": {
+          "Пн-Пт": "9:00-18:00"
+        },
+        "socialLinks": [
+          {
+            "type": "facebook",
+            "url": "https://facebook.com/example"
+          },
+          {
+            "type": "instagram",
+            "url": "https://instagram.com/example"
+          }
+        ],
+        "extraFields": {
+          "Матеріал": "Льон",
+          "Розмір": "L"
+        }
+      },
+      "comments": [
+        1,
+        2
+      ],
+      "slug": "kulon"
+    },
+    {
+      "id": 14,
+      "categoryId": 2,
+      "subcategoryId": 2,
+      "name": "Вишита скатертина",
+      "price": 959,
+      "currency": "UAH",
+      "rating": 4.9,
+      "ratingCount": 91,
+      "images": [
+        "assets/images/item-image.png"
+      ],
+      "shortDescription": "Опис товару 'Вишита скатертина' ручної роботи.",
+      "fullDescription": "Вишита скатертина виготовлений з любов'ю та натуральних матеріалів...",
+      "isMadeByUkrainian": false,
+      "isPremiumProduct": true,
+      "updatedAt": "2025-07-22T15:00:00Z",
+      "createdAt": "2025-07-20T12:00:00Z",
+      "countryId": 1,
+      "cityId": 1,
+      "seller": {
+        "name": "Наталя",
+        "contacts": {
+          "phone": "+380501234567",
+          "address": "вул. Хрещатик, 68",
+          "mapCoordinates": {
+            "lat": 50.4501,
+            "lng": 30.5234
+          }
+        },
+        "workingHours": {
+          "Пн-Пт": "9:00-18:00"
+        },
+        "socialLinks": [
+          {
+            "type": "facebook",
+            "url": "https://facebook.com/example"
+          },
+          {
+            "type": "instagram",
+            "url": "https://instagram.com/example"
+          }
+        ],
+        "extraFields": {
+          "Матеріал": "Льон",
+          "Розмір": "S"
+        }
+      },
+      "comments": [
+        1,
+        2
+      ],
+      "slug": "vyshyta-skatertyna"
+    },
+    {
+      "id": 15,
+      "categoryId": 2,
+      "subcategoryId": 1,
+      "name": "Сорочка",
+      "price": 1362,
+      "currency": "UAH",
+      "rating": 4.3,
+      "ratingCount": 5,
+      "images": [
+        "assets/images/item-image.png"
+      ],
+      "shortDescription": "Опис товару 'Сорочка' ручної роботи.",
+      "fullDescription": "Сорочка виготовлений з любов'ю та натуральних матеріалів...",
+      "isMadeByUkrainian": false,
+      "isPremiumProduct": false,
+      "updatedAt": "2025-07-20T19:00:00Z",
+      "createdAt": "2025-07-20T12:00:00Z",
+      "countryId": 1,
+      "cityId": 1,
+      "seller": {
+        "name": "Наталя",
+        "contacts": {
+          "phone": "+380501234567",
+          "address": "вул. Хрещатик, 84",
+          "mapCoordinates": {
+            "lat": 50.4501,
+            "lng": 30.5234
+          }
+        },
+        "workingHours": {
+          "Пн-Пт": "9:00-18:00"
+        },
+        "socialLinks": [
+          {
+            "type": "facebook",
+            "url": "https://facebook.com/example"
+          },
+          {
+            "type": "instagram",
+            "url": "https://instagram.com/example"
+          }
+        ],
+        "extraFields": {
+          "Матеріал": "Льон",
+          "Розмір": "L"
+        }
+      },
+      "comments": [
+        1,
+        2
+      ],
+      "slug": "sorochka"
+    },
+    {
+      "id": 16,
+      "categoryId": 1,
+      "subcategoryId": 2,
+      "name": "Сумка з льону",
+      "price": 113,
+      "currency": "UAH",
+      "rating": 4.0,
+      "ratingCount": 24,
+      "images": [
+        "assets/images/item-image.png"
+      ],
+      "shortDescription": "Опис товару 'Сумка з льону' ручної роботи.",
+      "fullDescription": "Сумка з льону виготовлений з любов'ю та натуральних матеріалів...",
+      "isMadeByUkrainian": false,
+      "isPremiumProduct": false,
+      "updatedAt": "2025-07-22T16:00:00Z",
+      "createdAt": "2025-07-20T12:00:00Z",
+      "countryId": 1,
+      "cityId": 1,
+      "seller": {
+        "name": "Оксана",
+        "contacts": {
+          "phone": "+380501234567",
+          "address": "вул. Хрещатик, 7",
+          "mapCoordinates": {
+            "lat": 50.4501,
+            "lng": 30.5234
+          }
+        },
+        "workingHours": {
+          "Пн-Пт": "9:00-18:00"
+        },
+        "socialLinks": [
+          {
+            "type": "facebook",
+            "url": "https://facebook.com/example"
+          },
+          {
+            "type": "instagram",
+            "url": "https://instagram.com/example"
+          }
+        ],
+        "extraFields": {
+          "Матеріал": "Льон",
+          "Розмір": "S"
+        }
+      },
+      "comments": [
+        1,
+        2
+      ],
+      "slug": "sumka-z-lonu"
+    },
+    {
+      "id": 17,
+      "categoryId": 2,
+      "subcategoryId": 1,
+      "name": "Пояс",
+      "price": 1057,
+      "currency": "UAH",
+      "rating": 4.6,
+      "ratingCount": 87,
+      "images": [
+        "assets/images/item-image.png"
+      ],
+      "shortDescription": "Опис товару 'Пояс' ручної роботи.",
+      "fullDescription": "Пояс виготовлений з любов'ю та натуральних матеріалів...",
+      "isMadeByUkrainian": false,
+      "isPremiumProduct": true,
+      "updatedAt": "2025-07-21T21:00:00Z",
+      "createdAt": "2025-07-20T12:00:00Z",
+      "countryId": 1,
+      "cityId": 1,
+      "seller": {
+        "name": "Марія",
+        "contacts": {
+          "phone": "+380501234567",
+          "address": "вул. Хрещатик, 50",
+          "mapCoordinates": {
+            "lat": 50.4501,
+            "lng": 30.5234
+          }
+        },
+        "workingHours": {
+          "Пн-Пт": "9:00-18:00"
+        },
+        "socialLinks": [
+          {
+            "type": "facebook",
+            "url": "https://facebook.com/example"
+          },
+          {
+            "type": "instagram",
+            "url": "https://instagram.com/example"
+          }
+        ],
+        "extraFields": {
+          "Матеріал": "Льон",
+          "Розмір": "M"
+        }
+      },
+      "comments": [
+        1,
+        2
+      ],
+      "slug": "poias"
+    },
+    {
+      "id": 18,
+      "categoryId": 1,
+      "subcategoryId": 1,
+      "name": "Блокнот ручної роботи",
+      "price": 591,
+      "currency": "UAH",
+      "rating": 4.5,
+      "ratingCount": 45,
+      "images": [
+        "assets/images/item-image.png"
+      ],
+      "shortDescription": "Опис товару 'Блокнот ручної роботи' ручної роботи.",
+      "fullDescription": "Блокнот ручної роботи виготовлений з любов'ю та натуральних матеріалів...",
+      "isMadeByUkrainian": true,
+      "isPremiumProduct": false,
+      "updatedAt": "2025-07-22T22:00:00Z",
+      "createdAt": "2025-07-20T12:00:00Z",
+      "countryId": 1,
+      "cityId": 1,
+      "seller": {
+        "name": "Оксана",
+        "contacts": {
+          "phone": "+380501234567",
+          "address": "вул. Хрещатик, 2",
+          "mapCoordinates": {
+            "lat": 50.4501,
+            "lng": 30.5234
+          }
+        },
+        "workingHours": {
+          "Пн-Пт": "9:00-18:00"
+        },
+        "socialLinks": [
+          {
+            "type": "facebook",
+            "url": "https://facebook.com/example"
+          },
+          {
+            "type": "instagram",
+            "url": "https://instagram.com/example"
+          }
+        ],
+        "extraFields": {
+          "Матеріал": "Льон",
+          "Розмір": "S"
+        }
+      },
+      "comments": [
+        1,
+        2
+      ],
+      "slug": "bloknot-ruchnoi-roboty"
+    },
+    {
+      "id": 19,
+      "categoryId": 2,
+      "subcategoryId": 2,
+      "name": "Косметичка",
+      "price": 381,
+      "currency": "UAH",
+      "rating": 3.6,
+      "ratingCount": 4,
+      "images": [
+        "assets/images/item-image.png"
+      ],
+      "shortDescription": "Опис товару 'Косметичка' ручної роботи.",
+      "fullDescription": "Косметичка виготовлений з любов'ю та натуральних матеріалів...",
+      "isMadeByUkrainian": true,
+      "isPremiumProduct": false,
+      "updatedAt": "2025-07-20T23:00:00Z",
+      "createdAt": "2025-07-20T12:00:00Z",
+      "countryId": 1,
+      "cityId": 1,
+      "seller": {
+        "name": "Оксана",
+        "contacts": {
+          "phone": "+380501234567",
+          "address": "вул. Хрещатик, 42",
+          "mapCoordinates": {
+            "lat": 50.4501,
+            "lng": 30.5234
+          }
+        },
+        "workingHours": {
+          "Пн-Пт": "9:00-18:00"
+        },
+        "socialLinks": [
+          {
+            "type": "facebook",
+            "url": "https://facebook.com/example"
+          },
+          {
+            "type": "instagram",
+            "url": "https://instagram.com/example"
+          }
+        ],
+        "extraFields": {
+          "Матеріал": "Льон",
+          "Розмір": "S"
+        }
+      },
+      "comments": [
+        1,
+        2
+      ],
+      "slug": "kosmetychka"
+    },
+    {
+      "id": 20,
+      "categoryId": 1,
+      "subcategoryId": 1,
+      "name": "Підставка для чашки",
+      "price": 496,
+      "currency": "UAH",
+      "rating": 4.7,
+      "ratingCount": 75,
+      "images": [
+        "assets/images/item-image.png"
+      ],
+      "shortDescription": "Опис товару 'Підставка для чашки' ручної роботи.",
+      "fullDescription": "Підставка для чашки виготовлений з любов'ю та натуральних матеріалів...",
+      "isMadeByUkrainian": false,
+      "isPremiumProduct": true,
+      "updatedAt": "2025-07-23T00:00:00Z",
+      "createdAt": "2025-07-20T12:00:00Z",
+      "countryId": 1,
+      "cityId": 1,
+      "seller": {
+        "name": "Оксана",
+        "contacts": {
+          "phone": "+380501234567",
+          "address": "вул. Хрещатик, 90",
+          "mapCoordinates": {
+            "lat": 50.4501,
+            "lng": 30.5234
+          }
+        },
+        "workingHours": {
+          "Пн-Пт": "9:00-18:00"
+        },
+        "socialLinks": [
+          {
+            "type": "facebook",
+            "url": "https://facebook.com/example"
+          },
+          {
+            "type": "instagram",
+            "url": "https://instagram.com/example"
+          }
+        ],
+        "extraFields": {
+          "Матеріал": "Льон",
+          "Розмір": "L"
+        }
+      },
+      "comments": [
+        1,
+        2
+      ],
+      "slug": "pidstavka-dlia-chashky"
+    }
   ],
   "comments": [
     {

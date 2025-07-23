@@ -51,7 +51,7 @@ const CatalogPage =()=> {
       ) : (
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px' }}>
           {products.map(product => (
-            <CatalogItem key={product.id} product={product} />
+            <CatalogItem key={product.id} product={product} categoryName={categoryName} subCategoryName={subCategoryName}/>
           ))}
         </div>
       )}
