@@ -1,0 +1,10 @@
+.item-rating{
+    margin: 10px 0 10px auto;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.rating-value{
+    margin-left: 3px;
+}

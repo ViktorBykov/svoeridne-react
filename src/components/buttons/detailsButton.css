@@ -1,0 +1,19 @@
+.details-button{
+    background-color: #52B3CB;
+    border: none;
+    border-radius: 25px;
+    /* padding: 8px 12px; */
+    cursor: pointer;
+
+    color: #ffffff;
+    width: 138px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.details-button span{
+    margin-right: 15px;
+    font-size: 16px;
+}
