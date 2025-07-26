@@ -177,7 +177,7 @@
       "updatedAt": "2025-07-20T18:00:00Z",
       "createdAt": "2025-07-20T12:00:00Z",
       "countryId": 1,
-      "cityId": 1,
+      "cityId": 2,
       "seller": {
         "name": "Марія",
         "contacts": {
@@ -231,7 +231,7 @@
       "updatedAt": "2025-07-22T19:00:00Z",
       "createdAt": "2025-07-20T12:00:00Z",
       "countryId": 1,
-      "cityId": 1,
+      "cityId": 3,
       "seller": {
         "name": "Марія",
         "contacts": {
@@ -285,7 +285,7 @@
       "updatedAt": "2025-07-20T22:00:00Z",
       "createdAt": "2025-07-20T12:00:00Z",
       "countryId": 1,
-      "cityId": 1,
+      "cityId": 4,
       "seller": {
         "name": "Оксана",
         "contacts": {
@@ -339,7 +339,7 @@
       "updatedAt": "2025-07-21T21:00:00Z",
       "createdAt": "2025-07-20T12:00:00Z",
       "countryId": 1,
-      "cityId": 1,
+      "cityId": 5,
       "seller": {
         "name": "Іван",
         "contacts": {
@@ -454,7 +454,7 @@
       "updatedAt": "2025-07-22T15:00:00Z",
       "createdAt": "2025-07-20T12:00:00Z",
       "countryId": 1,
-      "cityId": 1,
+      "cityId": 2,
       "seller": {
         "name": "Софія",
         "contacts": {
@@ -508,7 +508,7 @@
       "updatedAt": "2025-07-20T18:00:00Z",
       "createdAt": "2025-07-20T12:00:00Z",
       "countryId": 1,
-      "cityId": 1,
+      "cityId": 3,
       "seller": {
         "name": "Тарас",
         "contacts": {
@@ -562,7 +562,7 @@
       "updatedAt": "2025-07-22T15:00:00Z",
       "createdAt": "2025-07-20T12:00:00Z",
       "countryId": 1,
-      "cityId": 1,
+      "cityId": 4,
       "seller": {
         "name": "Олена",
         "contacts": {
@@ -616,7 +616,7 @@
       "updatedAt": "2025-07-21T12:00:00Z",
       "createdAt": "2025-07-20T12:00:00Z",
       "countryId": 1,
-      "cityId": 1,
+      "cityId": 5,
       "seller": {
         "name": "Оксана",
         "contacts": {
@@ -724,7 +724,7 @@
       "updatedAt": "2025-07-20T12:00:00Z",
       "createdAt": "2025-07-20T12:00:00Z",
       "countryId": 1,
-      "cityId": 1,
+      "cityId": 2,
       "seller": {
         "name": "Марія",
         "contacts": {
@@ -778,7 +778,7 @@
       "updatedAt": "2025-07-20T18:00:00Z",
       "createdAt": "2025-07-20T12:00:00Z",
       "countryId": 1,
-      "cityId": 1,
+      "cityId": 3,
       "seller": {
         "name": "Марія",
         "contacts": {
@@ -832,7 +832,7 @@
       "updatedAt": "2025-07-22T15:00:00Z",
       "createdAt": "2025-07-20T12:00:00Z",
       "countryId": 1,
-      "cityId": 1,
+      "cityId": 4,
       "seller": {
         "name": "Наталя",
         "contacts": {
@@ -886,7 +886,7 @@
       "updatedAt": "2025-07-20T19:00:00Z",
       "createdAt": "2025-07-20T12:00:00Z",
       "countryId": 1,
-      "cityId": 1,
+      "cityId": 5,
       "seller": {
         "name": "Наталя",
         "contacts": {
@@ -994,7 +994,7 @@
       "updatedAt": "2025-07-21T21:00:00Z",
       "createdAt": "2025-07-20T12:00:00Z",
       "countryId": 1,
-      "cityId": 1,
+      "cityId": 2,
       "seller": {
         "name": "Марія",
         "contacts": {
@@ -1048,7 +1048,7 @@
       "updatedAt": "2025-07-22T22:00:00Z",
       "createdAt": "2025-07-20T12:00:00Z",
       "countryId": 1,
-      "cityId": 1,
+      "cityId": 3,
       "seller": {
         "name": "Оксана",
         "contacts": {
@@ -1102,7 +1102,7 @@
       "updatedAt": "2025-07-20T23:00:00Z",
       "createdAt": "2025-07-20T12:00:00Z",
       "countryId": 1,
-      "cityId": 1,
+      "cityId": 4,
       "seller": {
         "name": "Оксана",
         "contacts": {
@@ -1156,7 +1156,7 @@
       "updatedAt": "2025-07-23T00:00:00Z",
       "createdAt": "2025-07-20T12:00:00Z",
       "countryId": 1,
-      "cityId": 1,
+      "cityId": 5,
       "seller": {
         "name": "Оксана",
         "contacts": {
@@ -1320,6 +1320,38 @@
       "text": "xdg",
       "productId": "3",
       "date": "2025-07-26T14:16:33.078Z"
+    },
+    {
+      "id": "fe01",
+      "userName": "Vasya",
+      "rate": 4,
+      "text": "яваипіапт ц",
+      "productId": "9",
+      "date": "2025-07-26T21:25:49.216Z"
+    },
+    {
+      "id": "6dcb",
+      "userName": "Vasya",
+      "rate": 5,
+      "text": "яавми ",
+      "productId": "9",
+      "date": "2025-07-26T21:25:57.340Z"
+    },
+    {
+      "id": "a7ad",
+      "userName": "Andr",
+      "rate": 2,
+      "text": "іапц",
+      "productId": "9",
+      "date": "2025-07-26T21:26:08.918Z"
+    },
+    {
+      "id": "2800",
+      "userName": "фукп",
+      "rate": 3,
+      "text": "фуерер",
+      "productId": "9",
+      "date": "2025-07-26T21:26:15.189Z"
     }
   ]
 }

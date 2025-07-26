@@ -73,8 +73,14 @@ const ApiService = {
       (r) => Number(r.productId) === Number(id)
     );
 
-    console.log("Filtered reviews:", filteredReviews.length, filteredReviews);
     return filteredReviews;
+  },
+
+  async getCities() {
+    const allCities = await fetch(`${API_BASE}/cities`);
+    const cities = await allCities.json();
+
+    return cities;
   },
 
   async addReview(productId, reviewData) {

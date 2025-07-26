@@ -14,6 +14,12 @@ const CatalogPage = () => {
   const [loading, setLoading] = useState(true);
 
   const [priceRange, setPriceRange] = useState([0, 1000]);
+  const [cities, setCities] = useState([]);
+  const [selectedCities, setSelectedCities] = useState([]); 
+
+    useEffect(() => {
+    ApiService.getCities().then(setCities);
+  }, []);
 
   useEffect(() => {
     if (products.length > 0) {
@@ -48,8 +54,15 @@ const CatalogPage = () => {
   }, [categoryName, subCategoryName]);
 
   const filteredProducts = products.filter(
-    (product) =>
-      Number(product.price) >= priceRange[0] && Number(product.price) <= priceRange[1]
+    (product) => {
+      const inPrice =
+        Number(product.price) >= priceRange[0] &&
+        Number(product.price) <= priceRange[1];
+      const inCity =
+        selectedCities.length === 0 ||
+        selectedCities.includes(String(product.cityId));
+      return inPrice && inCity;
+    }
   );
 
   if (loading) return <p>Завантаження...</p>;
@@ -72,11 +85,15 @@ const CatalogPage = () => {
         <p>Немає продуктів у цій категорії.</p>
       ) : (
         <div className="catalog-page-content">
+          
           <CatalogItemsFilters
-            min={Math.min(...products.map(p => Number(p.price)))}
-            max={Math.max(...products.map(p => Number(p.price)))}
+            min={Math.min(...products.map((p) => Number(p.price)))}
+            max={Math.max(...products.map((p) => Number(p.price)))}
             value={priceRange}
             onChange={setPriceRange}
+            cities={cities}
+            selectedCities={selectedCities}
+            setSelectedCities={setSelectedCities}
           />
           
           <div className="catalog-page-products">

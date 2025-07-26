@@ -1,0 +1,73 @@
+.cities-filter .cities-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.cities-filter label{
+    cursor: pointer;
+    margin: 5px 0;
+
+      display: block;
+  position: relative;
+  padding-left: 35px;
+  /* margin-bottom: 12px; */
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.cities-filter label:hover{
+    color: #52B3CB
+}
+.cities-filter input{
+      position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.cities-filter-checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border: 1px solid #eee;
+}
+/* On mouse-over, add a grey background color */
+.cities-filter label:hover input ~ .cities-filter-checkmark {
+    border-color: #52B3CB;
+}
+
+/* When the checkbox is checked, add a blue background */
+.cities-filter label input:checked ~ .cities-filter-checkmark {
+  background-color: #52B3CB;
+  border: 1px solid #52B3CB;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.cities-filter-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.cities-filter label input:checked ~ .cities-filter-checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.cities-filter label .cities-filter-checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
