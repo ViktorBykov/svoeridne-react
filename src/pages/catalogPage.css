@@ -1,0 +1,14 @@
+.catalog-page{
+    padding: 1rem 2rem;
+}
+
+.catalog-page-content{
+    display: flex;
+    gap: 20px 
+}
+.catalog-page-products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+

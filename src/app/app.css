@@ -16,6 +16,9 @@ h1, h2, h3{
   font-family: "KyivType";
   font-size: 40px;
 }
+h4{
+  font-size: 22px;
+}
 
 body {
   background-color: #FFFCF6;

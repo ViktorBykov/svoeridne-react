@@ -3,13 +3,26 @@ import { useParams } from "react-router-dom";
 
 import ApiService from "../components/services/apiService";
 import CatalogItem from "../components/catalogItem/catalogItem";
+import CatalogItemsFilters from "../components/catalogItemsFilters/catalogItemsFilters";
+
 import "./catalogPage.css";
 
-const CatalogPage =()=> {
+const CatalogPage = () => {
   const { categoryName, subCategoryName } = useParams();
   const [products, setProducts] = useState([]);
   const [subCategories, setSubCategories] = useState([]);
   const [loading, setLoading] = useState(true);
+
+  const [priceRange, setPriceRange] = useState([0, 1000]);
+
+  useEffect(() => {
+    if (products.length > 0) {
+      const prices = products.map((p) => Number(p.price));
+      const min = Math.min(...prices);
+      const max = Math.max(...prices);
+      setPriceRange([min, max]);
+    }
+  }, [products]);
 
   useEffect(() => {
     setLoading(true);
@@ -27,32 +40,55 @@ const CatalogPage =()=> {
           setSubCategories(subCategories);
           setProducts(products);
         })
-        .finally(() => {setLoading(false);});
+        .finally(() => {
+          setLoading(false);
+        });
     }
+    // eslint-disable-next-line
   }, [categoryName, subCategoryName]);
+
+  const filteredProducts = products.filter(
+    (product) =>
+      Number(product.price) >= priceRange[0] && Number(product.price) <= priceRange[1]
+  );
 
   if (loading) return <p>Завантаження...</p>;
 
   return (
-    <div>
+    <div className="catalog-page">
       <h2>
-        Каталог: {subCategoryName
+        Каталог:{" "}
+        {subCategoryName
           ? decodeURIComponent(subCategoryName)
           : decodeURIComponent(categoryName)}
       </h2>
       <h2>
-          {subCategories.map(sc => (
-            <span key={sc.id}>{sc.name}, </span>
-          ))}
+        {subCategories.map((sc) => (
+          <span key={sc.id}>{sc.name}, </span>
+        ))}
       </h2>
 
       {products.length === 0 ? (
         <p>Немає продуктів у цій категорії.</p>
       ) : (
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px' }}>
-          {products.map(product => (
-            <CatalogItem key={product.id} product={product} categoryName={categoryName} subCategoryName={subCategoryName}/>
-          ))}
+        <div className="catalog-page-content">
+          <CatalogItemsFilters
+            min={Math.min(...products.map(p => Number(p.price)))}
+            max={Math.max(...products.map(p => Number(p.price)))}
+            value={priceRange}
+            onChange={setPriceRange}
+          />
+          
+          <div className="catalog-page-products">
+            {filteredProducts.map((product) => (
+              <CatalogItem
+                key={product.id}
+                product={product}
+                categoryName={categoryName}
+                subCategoryName={subCategoryName}
+              />
+            ))}
+          </div>
         </div>
       )}
     </div>

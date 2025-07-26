@@ -1,0 +1,23 @@
+.filters-wrapper{
+    flex-basis: 340px;
+    flex-shrink: 0;
+}
+
+.catalog-page-filters{
+    flex-basis: 340px;
+    flex-shrink: 0;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid rgba(50, 50, 50, .2);
+}
+
+.filters-header {
+    margin: 0 0 15px 0;
+    font-weight: bold;
+}
+.filter-title{
+    font-size: 18px;
+    padding-bottom: 5px;
+    margin: 0 0 10px 0;
+    border-bottom: 1px solid rgba(50, 50, 50, .2);
+}
