@@ -1,0 +1,7 @@
+.reviews-list.static{
+    display: flex;
+       gap: 25px;
+}
+.reviews-list.static .review{
+    flex-grow: 1;
+}

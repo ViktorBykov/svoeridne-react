@@ -1,111 +1,111 @@
 {
   "categories": [
     {
-      "id": 1,
+      "id": "1",
       "name": "products"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "services"
     }
   ],
   "subcategories": [
     {
-      "id": 1,
+      "id": "1",
       "categoryId": 1,
       "name": "clothes"
     },
     {
-      "id": 2,
+      "id": "2",
       "categoryId": 1,
       "name": "food"
     },
     {
-      "id": 3,
+      "id": "3",
       "categoryId": 2,
       "name": "repair"
     },
     {
-      "id": 4,
+      "id": "4",
       "categoryId": 2,
       "name": "legal"
     }
   ],
   "countries": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Словаччина"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Польша"
     }
   ],
   "cities": [
     {
-      "id": 1,
+      "id": "1",
       "countryId": 1,
       "name": "Братислава"
     },
     {
-      "id": 2,
+      "id": "2",
       "countryId": 1,
       "name": "Кошице"
     },
     {
-      "id": 3,
+      "id": "3",
       "countryId": 1,
       "name": "Банська-Бистриця"
     },
     {
-      "id": 4,
+      "id": "4",
       "countryId": 1,
       "name": "Нітра"
     },
     {
-      "id": 5,
+      "id": "5",
       "countryId": 1,
       "name": "Трнава"
     },
     {
-      "id": 6,
+      "id": "6",
       "countryId": 1,
       "name": "Нове Замки"
     },
     {
-      "id": 7,
+      "id": "7",
       "countryId": 2,
       "name": "Варшава"
     },
     {
-      "id": 8,
+      "id": "8",
       "countryId": 2,
       "name": "Краків"
     },
     {
-      "id": 9,
+      "id": "9",
       "countryId": 2,
       "name": "Вроцлав"
     },
     {
-      "id": 10,
+      "id": "10",
       "countryId": 2,
       "name": "Познань"
     },
     {
-      "id": 11,
+      "id": "11",
       "countryId": 2,
       "name": "Гданськ"
     },
     {
-      "id": 12,
+      "id": "12",
       "countryId": 2,
       "name": "Люблін"
     }
   ],
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "categoryId": 1,
       "subcategoryId": 1,
       "name": "Вишиванка",
@@ -114,7 +114,7 @@
       "rating": 4.5,
       "ratingCount": 35,
       "images": [
-        "assets/images/item-image.png"
+        "/images/products/no-image.png"
       ],
       "shortDescription": "Опис товару 'Вишиванка' ручної роботи.",
       "fullDescription": "Вишиванка виготовлений з любов'ю та натуральних матеріалів...",
@@ -159,16 +159,16 @@
       "slug": "vyshyvanka"
     },
     {
-      "id": 2,
+      "id": "2",
       "categoryId": 2,
       "subcategoryId": 2,
       "name": "Глиняний глечик",
       "price": 1907,
       "currency": "UAH",
-      "rating": 4.0,
+      "rating": 4,
       "ratingCount": 96,
       "images": [
-        "assets/images/item-image.png"
+        "/images/products/no-image.png"
       ],
       "shortDescription": "Опис товару 'Глиняний глечик' ручної роботи.",
       "fullDescription": "Глиняний глечик виготовлений з любов'ю та натуральних матеріалів...",
@@ -213,7 +213,7 @@
       "slug": "hlynianyi-hlechyk"
     },
     {
-      "id": 3,
+      "id": "3",
       "categoryId": 1,
       "subcategoryId": 2,
       "name": "Сувенірна тарілка",
@@ -222,7 +222,7 @@
       "rating": 4.1,
       "ratingCount": 25,
       "images": [
-        "assets/images/item-image.png"
+        "/images/products/no-image.png"
       ],
       "shortDescription": "Опис товару 'Сувенірна тарілка' ручної роботи.",
       "fullDescription": "Сувенірна тарілка виготовлений з любов'ю та натуральних матеріалів...",
@@ -267,7 +267,7 @@
       "slug": "suvenirna-tarilka"
     },
     {
-      "id": 4,
+      "id": "4",
       "categoryId": 1,
       "subcategoryId": 1,
       "name": "Дерев'яна іграшка",
@@ -276,7 +276,7 @@
       "rating": 4.2,
       "ratingCount": 37,
       "images": [
-        "assets/images/item-image.png"
+        "/images/products/no-image.png"
       ],
       "shortDescription": "Опис товару 'Дерев'яна іграшка' ручної роботи.",
       "fullDescription": "Дерев'яна іграшка виготовлений з любов'ю та натуральних матеріалів...",
@@ -321,7 +321,7 @@
       "slug": "dereviana-ihrashka"
     },
     {
-      "id": 5,
+      "id": "5",
       "categoryId": 2,
       "subcategoryId": 1,
       "name": "Лялька-мотанка",
@@ -330,7 +330,7 @@
       "rating": 4.5,
       "ratingCount": 14,
       "images": [
-        "assets/images/item-image.png"
+        "/images/products/no-image.png"
       ],
       "shortDescription": "Опис товару 'Лялька-мотанка' ручної роботи.",
       "fullDescription": "Лялька-мотанка виготовлений з любов'ю та натуральних матеріалів...",
@@ -375,7 +375,7 @@
       "slug": "lialka-motanka"
     },
     {
-      "id": 6,
+      "id": "6",
       "categoryId": 2,
       "subcategoryId": 2,
       "name": "Писанка",
@@ -384,7 +384,14 @@
       "rating": 4.5,
       "ratingCount": 73,
       "images": [
-        "assets/images/item-image.png"
+        "/images/products/no-image.png",
+        "/images/products/no-image.png",
+        "/images/products/no-image.png",
+        "/images/products/no-image.png",
+        "/images/products/no-image.png",
+        "/images/products/no-image.png",
+        "/images/products/no-image.png",
+        "/images/products/no-image.png"
       ],
       "shortDescription": "Опис товару 'Писанка' ручної роботи.",
       "fullDescription": "Писанка виготовлений з любов'ю та натуральних матеріалів...",
@@ -429,7 +436,7 @@
       "slug": "pysanka"
     },
     {
-      "id": 7,
+      "id": "7",
       "categoryId": 1,
       "subcategoryId": 1,
       "name": "Картина",
@@ -438,7 +445,7 @@
       "rating": 3.9,
       "ratingCount": 83,
       "images": [
-        "assets/images/item-image.png"
+        "/images/products/no-image.png"
       ],
       "shortDescription": "Опис товару 'Картина' ручної роботи.",
       "fullDescription": "Картина виготовлений з любов'ю та натуральних матеріалів...",
@@ -483,7 +490,7 @@
       "slug": "kartyna"
     },
     {
-      "id": 8,
+      "id": "8",
       "categoryId": 1,
       "subcategoryId": 2,
       "name": "Свічка з вощини",
@@ -492,7 +499,7 @@
       "rating": 3.8,
       "ratingCount": 64,
       "images": [
-        "assets/images/item-image.png"
+        "/images/products/no-image.png"
       ],
       "shortDescription": "Опис товару 'Свічка з вощини' ручної роботи.",
       "fullDescription": "Свічка з вощини виготовлений з любов'ю та натуральних матеріалів...",
@@ -537,7 +544,7 @@
       "slug": "svichka-z-voshchyny"
     },
     {
-      "id": 9,
+      "id": "9",
       "categoryId": 2,
       "subcategoryId": 1,
       "name": "Плед з вовни",
@@ -546,7 +553,7 @@
       "rating": 4.6,
       "ratingCount": 12,
       "images": [
-        "assets/images/item-image.png"
+        "/images/products/no-image.png"
       ],
       "shortDescription": "Опис товару 'Плед з вовни' ручної роботи.",
       "fullDescription": "Плед з вовни виготовлений з любов'ю та натуральних матеріалів...",
@@ -591,7 +598,7 @@
       "slug": "pled-z-vovny"
     },
     {
-      "id": 10,
+      "id": "10",
       "categoryId": 2,
       "subcategoryId": 2,
       "name": "Прикраса з бісеру",
@@ -600,7 +607,7 @@
       "rating": 4.2,
       "ratingCount": 56,
       "images": [
-        "assets/images/item-image.png"
+        "/images/products/no-image.png"
       ],
       "shortDescription": "Опис товару 'Прикраса з бісеру' ручної роботи.",
       "fullDescription": "Прикраса з бісеру виготовлений з любов'ю та натуральних матеріалів...",
@@ -645,7 +652,7 @@
       "slug": "prykrasa-z-biseru"
     },
     {
-      "id": 11,
+      "id": "11",
       "categoryId": 1,
       "subcategoryId": 2,
       "name": "Рушник",
@@ -654,7 +661,7 @@
       "rating": 4.9,
       "ratingCount": 38,
       "images": [
-        "assets/images/item-image.png"
+        "/images/products/no-image.png"
       ],
       "shortDescription": "Опис товару 'Рушник' ручної роботи.",
       "fullDescription": "Рушник виготовлений з любов'ю та натуральних матеріалів...",
@@ -699,7 +706,7 @@
       "slug": "rushnyk"
     },
     {
-      "id": 12,
+      "id": "12",
       "categoryId": 2,
       "subcategoryId": 1,
       "name": "Керамічне горнятко",
@@ -708,7 +715,7 @@
       "rating": 4.4,
       "ratingCount": 74,
       "images": [
-        "assets/images/item-image.png"
+        "/images/products/no-image.png"
       ],
       "shortDescription": "Опис товару 'Керамічне горнятко' ручної роботи.",
       "fullDescription": "Керамічне горнятко виготовлений з любов'ю та натуральних матеріалів...",
@@ -753,7 +760,7 @@
       "slug": "keramichne-horniatko"
     },
     {
-      "id": 13,
+      "id": "13",
       "categoryId": 2,
       "subcategoryId": 1,
       "name": "Кулон",
@@ -762,7 +769,7 @@
       "rating": 4.7,
       "ratingCount": 20,
       "images": [
-        "assets/images/item-image.png"
+        "/images/products/no-image.png"
       ],
       "shortDescription": "Опис товару 'Кулон' ручної роботи.",
       "fullDescription": "Кулон виготовлений з любов'ю та натуральних матеріалів...",
@@ -807,7 +814,7 @@
       "slug": "kulon"
     },
     {
-      "id": 14,
+      "id": "14",
       "categoryId": 2,
       "subcategoryId": 2,
       "name": "Вишита скатертина",
@@ -816,7 +823,7 @@
       "rating": 4.9,
       "ratingCount": 91,
       "images": [
-        "assets/images/item-image.png"
+        "/images/products/no-image.png"
       ],
       "shortDescription": "Опис товару 'Вишита скатертина' ручної роботи.",
       "fullDescription": "Вишита скатертина виготовлений з любов'ю та натуральних матеріалів...",
@@ -861,7 +868,7 @@
       "slug": "vyshyta-skatertyna"
     },
     {
-      "id": 15,
+      "id": "15",
       "categoryId": 2,
       "subcategoryId": 1,
       "name": "Сорочка",
@@ -870,7 +877,7 @@
       "rating": 4.3,
       "ratingCount": 5,
       "images": [
-        "assets/images/item-image.png"
+        "/images/products/no-image.png"
       ],
       "shortDescription": "Опис товару 'Сорочка' ручної роботи.",
       "fullDescription": "Сорочка виготовлений з любов'ю та натуральних матеріалів...",
@@ -915,16 +922,16 @@
       "slug": "sorochka"
     },
     {
-      "id": 16,
+      "id": "16",
       "categoryId": 1,
       "subcategoryId": 2,
       "name": "Сумка з льону",
       "price": 113,
       "currency": "UAH",
-      "rating": 4.0,
+      "rating": 4,
       "ratingCount": 24,
       "images": [
-        "assets/images/item-image.png"
+        "/images/products/no-image.png"
       ],
       "shortDescription": "Опис товару 'Сумка з льону' ручної роботи.",
       "fullDescription": "Сумка з льону виготовлений з любов'ю та натуральних матеріалів...",
@@ -969,7 +976,7 @@
       "slug": "sumka-z-lonu"
     },
     {
-      "id": 17,
+      "id": "17",
       "categoryId": 2,
       "subcategoryId": 1,
       "name": "Пояс",
@@ -978,7 +985,7 @@
       "rating": 4.6,
       "ratingCount": 87,
       "images": [
-        "assets/images/item-image.png"
+        "/images/products/no-image.png"
       ],
       "shortDescription": "Опис товару 'Пояс' ручної роботи.",
       "fullDescription": "Пояс виготовлений з любов'ю та натуральних матеріалів...",
@@ -1023,7 +1030,7 @@
       "slug": "poias"
     },
     {
-      "id": 18,
+      "id": "18",
       "categoryId": 1,
       "subcategoryId": 1,
       "name": "Блокнот ручної роботи",
@@ -1032,7 +1039,7 @@
       "rating": 4.5,
       "ratingCount": 45,
       "images": [
-        "assets/images/item-image.png"
+        "/images/products/no-image.png"
       ],
       "shortDescription": "Опис товару 'Блокнот ручної роботи' ручної роботи.",
       "fullDescription": "Блокнот ручної роботи виготовлений з любов'ю та натуральних матеріалів...",
@@ -1077,7 +1084,7 @@
       "slug": "bloknot-ruchnoi-roboty"
     },
     {
-      "id": 19,
+      "id": "19",
       "categoryId": 2,
       "subcategoryId": 2,
       "name": "Косметичка",
@@ -1086,7 +1093,7 @@
       "rating": 3.6,
       "ratingCount": 4,
       "images": [
-        "assets/images/item-image.png"
+        "/images/products/no-image.png"
       ],
       "shortDescription": "Опис товару 'Косметичка' ручної роботи.",
       "fullDescription": "Косметичка виготовлений з любов'ю та натуральних матеріалів...",
@@ -1131,7 +1138,7 @@
       "slug": "kosmetychka"
     },
     {
-      "id": 20,
+      "id": "20",
       "categoryId": 1,
       "subcategoryId": 1,
       "name": "Підставка для чашки",
@@ -1140,7 +1147,7 @@
       "rating": 4.7,
       "ratingCount": 75,
       "images": [
-        "assets/images/item-image.png"
+        "/images/products/no-image.png"
       ],
       "shortDescription": "Опис товару 'Підставка для чашки' ручної роботи.",
       "fullDescription": "Підставка для чашки виготовлений з любов'ю та натуральних матеріалів...",
@@ -1187,18 +1194,132 @@
   ],
   "comments": [
     {
-      "id": 1,
-      "productId": 1,
+      "id": "1",
+      "productId": 6,
       "userName": "Іван",
+      "rate": 5,
       "text": "Дуже гарна якість!",
       "date": "2025-07-22T09:00:00Z"
     },
     {
-      "id": 2,
-      "productId": 1,
+      "id": "2",
+      "productId": 6,
+      "userName": "Іван",
+      "rate": 5,
+      "text": "Дуже гарна якість!",
+      "date": "2025-07-22T09:00:00Z"
+    },
+    {
+      "id": "3",
+      "productId": 6,
+      "userName": "Іван",
+      "rate": 5,
+      "text": "Дуже гарна якість!",
+      "date": "2025-07-22T09:00:00Z"
+    },
+    {
+      "id": "4",
+      "productId": 6,
       "userName": "Марія",
+      "rate": 5,
       "text": "Швидка доставка!",
       "date": "2025-07-21T16:15:00Z"
+    },
+    {
+      "id": "5",
+      "userName": "Vasya",
+      "rate": 5,
+      "text": "test test test test test test test test test test test testtest test test test test testtest test test test test testtest test test test test testtest test test test test testtest test testtest test test test test testtest test test test test testtest test test test test test ",
+      "productId": 6,
+      "date": "2025-07-25T20:44:20.970Z"
+    },
+    {
+      "id": "6",
+      "userName": "Andr",
+      "rate": 2,
+      "text": "another test review",
+      "productId": 6,
+      "date": "2025-07-26T11:14:11.951Z"
+    },
+    {
+      "id": "05f1",
+      "userName": "VasyaVas!!",
+      "rate": 3,
+      "text": "якийсь рандомний текст для відгуку з оціною в 3 зірочки",
+      "productId": "6",
+      "date": "2025-07-26T11:42:27.215Z"
+    },
+    {
+      "id": "9",
+      "userName": "Vasya",
+      "rate": 4,
+      "text": "фцкпйукр 5рн",
+      "productId": "1",
+      "date": "2025-07-26T11:43:56.642Z"
+    },
+    {
+      "id": "86b0",
+      "userName": "Andr",
+      "rate": 2,
+      "text": "фцкн й45г  46г4и26г",
+      "productId": "1",
+      "date": "2025-07-26T11:47:19.018Z"
+    },
+    {
+      "id": "075e",
+      "userName": "цКУН ",
+      "rate": 0,
+      "text": "Й457И45И",
+      "productId": "1",
+      "date": "2025-07-26T11:47:42.041Z"
+    },
+    {
+      "id": "a2c7",
+      "userName": "VasyaVas!!",
+      "rate": 2,
+      "text": "aethwr t wrtj wktw ",
+      "productId": "3",
+      "date": "2025-07-26T12:19:01.669Z"
+    },
+    {
+      "id": "f7b3",
+      "userName": "Andr",
+      "rate": 5,
+      "text": "sdgg",
+      "productId": "3",
+      "date": "2025-07-26T12:25:20.880Z"
+    },
+    {
+      "id": "e0b9",
+      "userName": "dd",
+      "rate": 3,
+      "text": "aerhwy",
+      "productId": "3",
+      "date": "2025-07-26T13:51:00.683Z"
+    },
+    {
+      "id": "6327",
+      "userName": "vv",
+      "rate": 2,
+      "text": "sdbb",
+      "productId": "3",
+      "date": "2025-07-26T14:15:36.122Z"
+    },
+    {
+      "id": "afc6",
+      "userName": "ff",
+      "rate": 0,
+      "text": "cc",
+      "productId": "3",
+      "date": "2025-07-26T14:15:51.618Z"
+    },
+    {
+      "id": "ad42",
+      "userName": "Vasya",
+      "rate": 0,
+      "text": "xdg",
+      "productId": "3",
+      "date": "2025-07-26T14:16:33.078Z"
     }
   ]
 }

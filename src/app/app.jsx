@@ -7,7 +7,7 @@ import Footer from "../components/footer/footer";
 
 import MainPage from "../pages/mainPage";
 import CatalogPage from "../pages/catalogPage";
-import CatalogItemPage from "../pages/catalogItemPage";
+import ProductPage from "../pages/productPage/productPage";
 import EventsPage from "../pages/events";
 import MeetingsPage from "../pages/meetings";
 import ForumPage from "../pages/forum";
@@ -27,8 +27,8 @@ const App = () => {
           <Route path="/forum" element={<ForumPage />} />
           <Route path="/about" element={<AboutPage />} />
 
-          <Route path="/:categoryName/:subcategoryName/:productSlug" element={<CatalogItemPage />} />
-          <Route path="/:categoryName/:productSlug" element={<CatalogItemPage />} />
+          <Route path="/:categoryName/:subcategoryName/:productSlug" element={<ProductPage />} />
+          <Route path="/:categoryName/:productSlug" element={<ProductPage />} />
           <Route path="/:categoryName/:subcategoryName" element={<CatalogPage />} />
           <Route path="/:categoryName" element={<CatalogPage />} />
           

@@ -62,8 +62,41 @@ const ApiService = {
     const allProducts = await fetch(`${API_BASE}/products`);
     const products = await allProducts.json();
     return products.find(
-      (p) => p.name.toLowerCase().replace(/\s+/g, "-") === slug
+      (p) => p.slug.toLowerCase().replace(/\s+/g, "-") === slug
     );
+  },
+
+  async getReviewsByProductId(id) {
+    const allReviews = await fetch(`${API_BASE}/comments`);
+    const reviews = await allReviews.json();
+    const filteredReviews = reviews.filter(
+      (r) => Number(r.productId) === Number(id)
+    );
+
+    console.log("Filtered reviews:", filteredReviews.length, filteredReviews);
+    return filteredReviews;
+  },
+
+  async addReview(productId, reviewData) {
+    const response = await fetch(`${API_BASE}/comments`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        ...reviewData,
+        productId,
+        date: new Date().toISOString(),
+      }),
+    });
+
+    if (!response.ok) {
+      throw new Error("Failed to add review");
+    } else {
+      console.log("Review added successfully");
+    }
+
+    return response.json();
   },
 };
 

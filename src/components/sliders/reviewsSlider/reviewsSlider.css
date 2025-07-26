@@ -1,0 +1,39 @@
+.reviews-header,
+.reviews-nav{
+    display: flex;
+    align-items: center;
+}
+
+.reviews-header{
+justify-content: space-between;
+}
+
+.reviews-nav-button{
+cursor: pointer;
+}
+
+.reviews-nav-button:hover svg rect,
+.reviews-nav-button:hover svg path{
+    stroke: #ffffff
+}
+
+.reviews-nav-button svg{
+    transition: all 2s ease;
+}
+.reviews-nav-button:hover svg{
+    fill: #52B3CB
+}
+
+.reviews-nav-button.next{
+    margin-left: 10px;
+}
+.slick-list{
+    transition: all 0.5s ease;
+}
+.slick-slider {
+margin-inline: -30px; 
+}
+
+.slick-slide > div{
+    margin-inline: 15px; 
+}

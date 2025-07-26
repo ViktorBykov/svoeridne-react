@@ -1,0 +1,35 @@
+.add-review .reviewer-name,
+.add-review textarea {
+    /* width: 100%; */
+    padding: 20px 12px;
+    /* margin-bottom: 10px; */
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+.add-review .reviewer-name{
+    /* flex-grow: 1; */
+    width: 50%;
+}
+.add-review textarea {
+    width: 100%!important;
+    height: 170px;
+    resize: vertical;
+    margin-bottom: 25px;
+}
+.review-row {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 15px;
+}
+.add-review form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-review input:focus,
+.add-review textarea:focus {
+    outline: none;
+   border-color:#52B3CB
+}
+

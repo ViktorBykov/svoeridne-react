@@ -8,3 +8,9 @@
 .rating-value{
     margin-left: 3px;
 }
+
+.rating-input{
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}

@@ -6,7 +6,7 @@ import CatalogItem from "../components/catalogItem/catalogItem";
 import "./catalogPage.css";
 
 const CatalogPage =()=> {
- const { categoryName, subCategoryName } = useParams();
+  const { categoryName, subCategoryName } = useParams();
   const [products, setProducts] = useState([]);
   const [subCategories, setSubCategories] = useState([]);
   const [loading, setLoading] = useState(true);

@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./detailsButton.css";
+import "./button.css";
 
 function DetailsButton({to}) {
     const navigate = useNavigate();

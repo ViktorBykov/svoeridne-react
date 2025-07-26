@@ -1,0 +1,12 @@
+.share{
+    display: flex;
+    align-items: center;
+}
+
+.share button{
+    margin-left: 10px;
+}
+.share-title{
+    font-size: 16px;
+    color: #323232;
+}
