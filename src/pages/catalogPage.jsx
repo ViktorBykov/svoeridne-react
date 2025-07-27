@@ -75,7 +75,7 @@ const CatalogPage = () => {
 
   return (
     <div className="catalog-page">
-      <h2>
+      {/* <h2>
         Каталог:{" "}
         {subCategoryName
           ? decodeURIComponent(subCategoryName)
@@ -85,7 +85,7 @@ const CatalogPage = () => {
         {subCategories.map((sc) => (
           <span key={sc.id}>{sc.name}, </span>
         ))}
-      </h2>
+      </h2> */}
 
       {products.length === 0 ? (
         <p>Немає продуктів у цій категорії.</p>
