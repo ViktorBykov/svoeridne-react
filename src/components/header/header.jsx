@@ -1,20 +1,23 @@
-import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import React  from "react";
+import { NavLink, useLocation } from "react-router-dom";
+
 import "./header.css";
+
 import logo from "../../assets/logo.png";
 
 
 const Header = () => {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
+  const navLinkClassName = ({ isActive }) => "navLink" + (isActive ? " active" : "")
 
   return (
     <header className="header">
       {!isHomePage ? (
         <div className="logo">
-          <Link to="/">
+          <NavLink to="/">
             <img src={logo} alt="Logo" />
-          </Link>
+          </NavLink>
         </div>
         ) : 
         <img src={logo} alt="Logo" />
@@ -22,22 +25,22 @@ const Header = () => {
       <nav className="nav">
         <ul className="navList">
           <li className="navItem">
-            <Link to="/products/" className="navLink">Товари</Link>
+            <NavLink to="/products/" className={navLinkClassName}>Товари</NavLink>
           </li>
           <li className="navItem">
-            <Link to="/services/" className="navLink">Послуги</Link>
+            <NavLink to="/services/" className={navLinkClassName}>Послуги</NavLink>
           </li>
           <li className="navItem">
-            <Link to="/events/" className="navLink">Події</Link>
+            <NavLink to="/events/" className={navLinkClassName}>Події</NavLink>
           </li>
           <li className="navItem">
-            <Link to="/meetings/" className="navLink">Зустрічі</Link>
+            <NavLink to="/meetings/" className={navLinkClassName}>Зустрічі</NavLink>
           </li>
           <li className="navItem">
-            <Link to="/forum/" className="navLink">Форум</Link>
+            <NavLink to="/forum/" className={navLinkClassName}>Форум</NavLink>
           </li>
           <li className="navItem">
-            <Link to="/about/" className="navLink">Про нас</Link>
+            <NavLink to="/about/" className={navLinkClassName}>Про нас</NavLink>
           </li>
         </ul>
       </nav>
