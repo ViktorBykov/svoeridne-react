@@ -9,15 +9,19 @@ import "./catalogPage.css";
 
 const CatalogPage = () => {
   const { categoryName, subCategoryName } = useParams();
+
   const [products, setProducts] = useState([]);
   const [subCategories, setSubCategories] = useState([]);
   const [loading, setLoading] = useState(true);
 
   const [priceRange, setPriceRange] = useState([0, 1000]);
   const [cities, setCities] = useState([]);
-  const [selectedCities, setSelectedCities] = useState([]); 
+  const [selectedCities, setSelectedCities] = useState([]);
 
-    useEffect(() => {
+  // Додаємо стейт для вибраних підкатегорій
+  const [selectedCategories, setSelectedCategories] = useState([]);
+
+  useEffect(() => {
     ApiService.getCities().then(setCities);
   }, []);
 
@@ -53,17 +57,19 @@ const CatalogPage = () => {
     // eslint-disable-next-line
   }, [categoryName, subCategoryName]);
 
-  const filteredProducts = products.filter(
-    (product) => {
-      const inPrice =
-        Number(product.price) >= priceRange[0] &&
-        Number(product.price) <= priceRange[1];
-      const inCity =
-        selectedCities.length === 0 ||
-        selectedCities.includes(String(product.cityId));
-      return inPrice && inCity;
-    }
-  );
+  // Фільтрація по ціні, місту та підкатегоріям
+  const filteredProducts = products.filter((product) => {
+    const inPrice =
+      Number(product.price) >= priceRange[0] &&
+      Number(product.price) <= priceRange[1];
+    const inCity =
+      selectedCities.length === 0 ||
+      selectedCities.includes(String(product.cityId));
+    const inCategory =
+      selectedCategories.length === 0 ||
+      selectedCategories.includes(String(product.subcategoryId));
+    return inPrice && inCity && inCategory;
+  });
 
   if (loading) return <p>Завантаження...</p>;
 
@@ -85,7 +91,6 @@ const CatalogPage = () => {
         <p>Немає продуктів у цій категорії.</p>
       ) : (
         <div className="catalog-page-content">
-          
           <CatalogItemsFilters
             min={Math.min(...products.map((p) => Number(p.price)))}
             max={Math.max(...products.map((p) => Number(p.price)))}
@@ -94,8 +99,11 @@ const CatalogPage = () => {
             cities={cities}
             selectedCities={selectedCities}
             setSelectedCities={setSelectedCities}
+            categories={subCategories}
+            selectedCategories={selectedCategories}
+            setSelectedCategories={setSelectedCategories}
           />
-          
+
           <div className="catalog-page-products">
             {filteredProducts.map((product) => (
               <CatalogItem

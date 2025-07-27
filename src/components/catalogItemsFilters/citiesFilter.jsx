@@ -2,10 +2,9 @@ import React from "react";
 import "./citiesFilter.css";
 
 export default function CitiesFilter({ cities = [], selectedCities = [], onChange }) {
-  // Обробник зміни чекбоксів
   const handleCheckboxChange = (cityId) => {
     if (cityId === "all") {
-      onChange([]); // Показати всі міста
+      onChange([]); 
     } else {
       if (selectedCities.includes(cityId)) {
         onChange(selectedCities.filter((id) => id !== cityId));
@@ -15,7 +14,6 @@ export default function CitiesFilter({ cities = [], selectedCities = [], onChang
     }
   };
 
-  // Якщо не вибрано жодного міста — вважаємо, що "Всі міста"
   const allChecked = selectedCities.length === 0;
 
   return (

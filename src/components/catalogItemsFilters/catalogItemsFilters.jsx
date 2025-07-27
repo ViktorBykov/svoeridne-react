@@ -1,6 +1,7 @@
 import React from "react";
 import PriceFilter from "./priceFilter";
 import CitiesFilter from "./citiesFilter";
+import CategoriesFilter from "./categoriesFilter";
 
 import "./catalogItemsFilters.css";
 
@@ -11,7 +12,10 @@ export default function CatalogItemsFilters({
   onChange,
   cities,
   selectedCities,
-  setSelectedCities
+  setSelectedCities,
+  categories,
+  selectedCategories,  
+  setSelectedCategories,
 }) {
   return (
     <div className="filters-wrapper">
@@ -28,7 +32,11 @@ export default function CatalogItemsFilters({
           selectedCities={selectedCities}
           onChange={setSelectedCities}
         />
-        {/* <CategoriesFilter ... /> */}
+        <CategoriesFilter
+          categories={categories}
+          selectedCategories={selectedCategories}
+          onChange={setSelectedCategories}
+        />
       </div>
     </div>
   );
