@@ -1,4 +1,6 @@
 import React from "react";
+import CollapsibleFilter from "./collapsibleFilter";
+
 import "./categoriesFilter.css";
 
 export default function CategoriesFilter({ categories = [], selectedCategories = [], onChange }) {
@@ -18,30 +20,34 @@ export default function CategoriesFilter({ categories = [], selectedCategories =
 
   return (
     <div className="cities-filter">
-      <h5 className="filter-title">Категорії</h5>
-      <label>
-        <input
-          type="checkbox"
-          checked={allChecked}
-          onChange={() => handleCheckboxChange("all")}
-        />
-        Всі категорії
-        <span className="cities-filter-checkmark"></span>
-      </label>
-      <div className="cities-list">
-        {categories.map((category) => (
-          <label key={category.id}>
+      <CollapsibleFilter>
+        <h5 className="filter-title">Категорії</h5>
+        <div className="filter-content">
+          <label>
             <input
-                id={category.id}
-                type="checkbox"
-                checked={selectedCategories.includes(String(category.id))}
-                onChange={() => handleCheckboxChange(String(category.id))}
+              type="checkbox"
+              checked={allChecked}
+              onChange={() => handleCheckboxChange("all")}
             />
-            {category.name}
+            Всі категорії
             <span className="cities-filter-checkmark"></span>
           </label>
-        ))}
-      </div>
+          <div className="cities-list">
+            {categories.map((category) => (
+              <label key={category.id}>
+                <input
+                    id={category.id}
+                    type="checkbox"
+                    checked={selectedCategories.includes(String(category.id))}
+                    onChange={() => handleCheckboxChange(String(category.id))}
+                />
+                {category.name}
+                <span className="cities-filter-checkmark"></span>
+              </label>
+            ))}
+          </div>
+        </div>
+      </CollapsibleFilter>
     </div>
   );
 }

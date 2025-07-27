@@ -1,0 +1,18 @@
+.collapsible-title {
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+}
+
+.triangle {
+  font-size: 14px;
+  transition: transform 0.3s;
+  margin: 15px 0px 0px 5px;
+}
+
+.collapsible-content {
+  transition: max-height 0.3s ease;
+  overflow: hidden;
+}

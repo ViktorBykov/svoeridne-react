@@ -1,4 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
+import CollapsibleFilter from "./collapsibleFilter";
+
 import "./priceFilter.css";
 
 export default function PriceFilter({ min, max, value, onChange }) {
@@ -35,42 +37,46 @@ export default function PriceFilter({ min, max, value, onChange }) {
 
   return (
     <div className="price-filter">
-      <h5 className="filter-title">Ціна</h5>
-      <div className="input-box">
-        <input
-          type="number"
-          value={minVal}
-          min={min}
-          max={maxVal - minGap}
-          onChange={handleMinChange}
-        />
-        <input
-          type="number"
-          value={maxVal}
-          min={minVal + minGap}
-          max={max}
-          onChange={handleMaxChange}
-        />
-      </div>
-      <div className="range-slider" style={{ position: "relative" }}>
-        <div className="slider-track" ref={trackRef}></div>
-        <input
-          type="range"
-          min={min}
-          max={max}
-          value={minVal}
-          onChange={handleMinChange}
-          className="min-val"
-        />
-        <input
-          type="range"
-          min={min}
-          max={max}
-          value={maxVal}
-          onChange={handleMaxChange}
-          className="max-val"
-        />
-      </div>
+      <CollapsibleFilter>
+        <h5 className="filter-title">Ціна</h5>
+        <div className="filter-content">
+          <div className="input-box">
+            <input
+              type="number"
+              value={minVal}
+              min={min}
+              max={maxVal - minGap}
+              onChange={handleMinChange}
+            />
+            <input
+              type="number"
+              value={maxVal}
+              min={minVal + minGap}
+              max={max}
+              onChange={handleMaxChange}
+            />
+          </div>
+          <div className="range-slider" style={{ position: "relative" }}>
+            <div className="slider-track" ref={trackRef}></div>
+            <input
+              type="range"
+              min={min}
+              max={max}
+              value={minVal}
+              onChange={handleMinChange}
+              className="min-val"
+            />
+            <input
+              type="range"
+              min={min}
+              max={max}
+              value={maxVal}
+              onChange={handleMaxChange}
+              className="max-val"
+            />
+          </div>
+        </div>
+      </CollapsibleFilter>
     </div>
   );
 }
