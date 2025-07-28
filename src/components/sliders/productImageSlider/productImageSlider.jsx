@@ -1,10 +1,10 @@
-import ImageGallery from "react-image-gallery";
-import React from "react";
+import ImageGallery from 'react-image-gallery';
+import React from 'react';
 
-import "./productImageSlider.css";
+import './productImageSlider.css';
 
 export default class ProductImageSlider extends React.Component {
-      constructor(props) {
+    constructor(props) {
         super(props);
 
         this.state = {
@@ -22,25 +22,20 @@ export default class ProductImageSlider extends React.Component {
             slideDuration: 450,
             slideInterval: 2000,
             slideOnThumbnailOver: false,
-            thumbnailPosition: "bottom",
+            thumbnailPosition: 'bottom',
             showVideo: false,
             useWindowKeyDown: true,
         };
-      }
+    }
 
-      render(){
-            const { images } = this.props;
+    render() {
+        const { images } = this.props;
 
-            const galleryImages = images.map((url) => ({
-                original: url,
-                thumbnail: url,
-            }));
+        const galleryImages = images.map(url => ({
+            original: url,
+            thumbnail: url,
+        }));
 
-        return(
-            <ImageGallery
-                 items={galleryImages}
-                {...this.state}
-            />
-        )
-      }
+        return <ImageGallery items={galleryImages} {...this.state} />;
+    }
 }

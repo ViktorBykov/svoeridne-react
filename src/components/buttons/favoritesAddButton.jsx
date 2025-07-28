@@ -1,31 +1,31 @@
-import React from "react";
-import { useDispatch, useSelector } from "react-redux";
+import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 
-import { addFavorite, removeFavorite } from "../../store/favoritesSlice";
+import { addFavorite, removeFavorite } from '../../store/favoritesSlice';
 
-import "./button.css";
+import './button.css';
 
-function FavoritesAddButton({id}) {
-  const dispatch = useDispatch();
-  const favorites = useSelector(state => state.favorites.items);
-  const isFavorite = favorites.includes(id);
+function FavoritesAddButton({ id }) {
+    const dispatch = useDispatch();
+    const favorites = useSelector(state => state.favorites.items);
+    const isFavorite = favorites.includes(id);
 
-  const handleClick = () => {
-    if (isFavorite) {
-      dispatch(removeFavorite(id));
-    } else {
-      dispatch(addFavorite(id));
-    }
-  };
+    const handleClick = () => {
+        if (isFavorite) {
+            dispatch(removeFavorite(id));
+        } else {
+            dispatch(addFavorite(id));
+        }
+    };
 
     return (
-        <button 
+        <button
             onClick={handleClick}
             aria-pressed={isFavorite}
-            className={"button favorites-button"}>
-
+            className={'button favorites-button'}
+        >
             <span>
-                {isFavorite ? "Видалити з обраного" : "Додати в обране"}
+                {isFavorite ? 'Видалити з обраного' : 'Додати в обране'}
             </span>
         </button>
     );

@@ -1,10 +1,11 @@
-import React from "react";
-import "./button.css";
+import React from 'react';
+import './button.css';
 
 function AddReviewButton() {
-
     return (
-        <button className="add-review-button button" type="submit">Надіслати</button>
+        <button className="add-review-button button" type="submit">
+            Надіслати
+        </button>
     );
 }
 

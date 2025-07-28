@@ -1,26 +1,22 @@
-import React from "react";
+import React from 'react';
 
 import {
-  FacebookShareButton,
-  TelegramShareButton,
-  ViberShareButton,
-} from "react-share";
+    FacebookShareButton,
+    TelegramShareButton,
+    ViberShareButton,
+} from 'react-share';
 
-import {
-  FacebookIcon,
-  TelegramIcon,
-  ViberIcon,
-} from "react-share";
+import { FacebookIcon, TelegramIcon, ViberIcon } from 'react-share';
 
-import "./share.css";
+import './share.css';
 
-function Share({name}) {
+function Share({ name }) {
     return (
         <div className="share">
             <p className="share-title">Поділитись: </p>
             <div className="share-buttons">
                 <FacebookShareButton title={name} url={window.location.href}>
-                     <FacebookIcon size={32} round={true} />
+                    <FacebookIcon size={32} round={true} />
                 </FacebookShareButton>
                 <TelegramShareButton title={name} url={window.location.href}>
                     <TelegramIcon size={32} round={true} />
