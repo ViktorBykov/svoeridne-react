@@ -1,0 +1,18 @@
+.favorites{
+    position: relative;
+}
+
+.favorites-counter{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    font-size: 10px;
+    border-radius: 50%;
+    background-color: #63C069;
+    color: #ffffff;
+}

@@ -1,6 +1,4 @@
-.details-button,
-.favorites-button,
-.add-review-button {
+button {
     background-color: #52B3CB;
     border: none;
     border-radius: 25px;
@@ -14,19 +12,18 @@
     align-items: center;
     justify-content: center;
     transition: background-color 0.3s ease;
+    min-width: fit-content;
+    padding: 0 15px;
 }
 
-.details-button span,
-.favorites-button span{
+button span{
     font-size: 16px;
 }
 
-.details-button svg{
+button.details-button svg{
     margin-left: 15px;
 }
 
-.details-button:hover,
-.favorites-button:hover,
-.add-review-button:hover {
-background-color: #63C069;
+button:hover {
+    background-color: #63C069;
 }

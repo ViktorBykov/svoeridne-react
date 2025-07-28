@@ -1,0 +1,10 @@
+.favorites-list-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.favorites-list.static{
+    display: flex;
+    gap: 20px;
+    /* justify-content: space-between; */
+}

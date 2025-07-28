@@ -1,5 +1,9 @@
 import React  from "react";
 import { NavLink, useLocation } from "react-router-dom";
+import { Provider } from "react-redux";
+
+import Favorites from "../favorites/favoritesCounter";
+import store from "../../store/store";
 
 import "./header.css";
 
@@ -44,11 +48,9 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <div className="favorites">
-        <svg width="32" height="28" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M9.04348 0C4.05707 0 0 4.05078 0 9.02946C0 19.2826 11.6141 24.3426 15.5652 27.631L16 28L16.4348 27.631C20.3859 24.3426 32 19.2826 32 9.02946C32 4.05078 27.9429 0 22.9565 0C20.1359 0 17.6576 1.3376 16 3.36434C14.3424 1.3376 11.8641 0 9.04348 0ZM9.04348 1.38915C11.712 1.38915 14.0435 2.75659 15.413 4.8186L16 5.68682L16.587 4.8186C17.9565 2.75659 20.288 1.38915 22.9565 1.38915C27.1902 1.38915 30.6087 4.80233 30.6087 9.02946C30.6087 17.9884 20.587 22.6252 16 26.2419C11.413 22.6252 1.3913 17.9884 1.3913 9.02946C1.3913 4.80233 4.80978 1.38915 9.04348 1.38915Z" fill="#323232"/>
-        </svg>
-      </div>
+      <Provider store={store}>
+        <Favorites/>
+      </Provider>
     </header>
   );
 };

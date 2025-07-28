@@ -22,6 +22,7 @@ export default class ProductsSlider extends Component {
 
     render() {
         const { products, categoryName, title } = this.props;
+        console.log(products);
 
         const settings = {
             dots: false,
@@ -37,7 +38,11 @@ export default class ProductsSlider extends Component {
         return (
             <div className="reviews">
                 <div className="slider-header">
-                    <h2>{title}</h2>
+                    {
+                        title &&(
+                            <h2>{title}</h2>
+                        )
+                    }
                     <div className="slider-nav">
                         <div className="slider-nav-button prev" onClick={this.previous}>
                             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">

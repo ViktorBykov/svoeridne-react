@@ -1,0 +1,4 @@
+.favorites-list.static{
+    display: flex;
+    flex-wrap: wrap;
+}

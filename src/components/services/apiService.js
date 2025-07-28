@@ -98,8 +98,6 @@ const ApiService = {
 
     if (!response.ok) {
       throw new Error("Failed to add review");
-    } else {
-      console.log("Review added successfully");
     }
 
     return response.json();
