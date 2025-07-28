@@ -29,7 +29,7 @@
 
 .add-review input:focus,
 .add-review textarea:focus {
-    outline: none;
+    /* outline: none; */
    border-color:#52B3CB
 }
 

@@ -1,0 +1,45 @@
+.main-screen h1{
+    font-size: 80px;
+    margin: 0 0 20px;
+}
+.main-screen h2{
+    font-family: "Arsenal";
+    font-size: 18px;
+}
+.main-screen{
+    display: flex;
+    height: calc(100vh - 150px);
+    position: relative;
+}
+
+.main-screen-col{
+    width: 50%;
+}
+.main-screen-col.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-screen-bg{
+    max-width: 80%;
+}
+.main-screen-left-bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-width: 315px;
+    z-index: -1;
+}
+
+.main-screen-right-bg{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 350px;
+    z-index: -1;
+}
+.main-screen-col.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

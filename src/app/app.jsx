@@ -12,6 +12,7 @@ import EventsPage from "../pages/events";
 import MeetingsPage from "../pages/meetings";
 import ForumPage from "../pages/forum";
 import AboutPage from "../pages/about";
+import SearchResultPage from "../pages/searchResultPage";
 
 const App = () => {
   return (
@@ -26,6 +27,8 @@ const App = () => {
           <Route path="/meetings" element={<MeetingsPage />} />
           <Route path="/forum" element={<ForumPage />} />
           <Route path="/about" element={<AboutPage />} />
+
+          <Route path="/search-results" element={<SearchResultPage />} />
 
           <Route path="/:categoryName/:subcategoryName/:productSlug" element={<ProductPage />} />
           <Route path="/:categoryName/:productSlug" element={<ProductPage />} />

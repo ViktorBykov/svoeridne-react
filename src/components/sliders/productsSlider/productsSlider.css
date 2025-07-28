@@ -1,0 +1,42 @@
+.slider-header,
+.slider-nav{
+    display: flex;
+    align-items: center;
+}
+
+.slider-header{
+justify-content: space-between;
+}
+
+.slider-nav-button{
+cursor: pointer;
+}
+
+.slider-nav-button:hover svg rect,
+.slider-nav-button:hover svg path{
+    stroke: #ffffff
+}
+
+.slider-nav-button svg{
+    transition: all 2s ease;
+}
+.slider-nav-button:hover svg{
+    fill: #52B3CB
+}
+
+.slider-nav-button.next{
+    margin-left: 10px;
+}
+.slick-list{
+    transition: all 0.5s ease;
+}
+.slick-slider {
+margin-inline: -30px; 
+}
+
+.slick-slide > div{
+    margin-inline: 15px; 
+}
+.products-slider .slick-track{
+    margin: 10px 0;
+}

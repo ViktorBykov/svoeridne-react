@@ -74,7 +74,7 @@ const CatalogPage = () => {
   if (loading) return <p>Завантаження...</p>;
 
   return (
-    <div className="catalog-page">
+    <div className="catalog-page container">
       {/* <h2>
         Каталог:{" "}
         {subCategoryName
