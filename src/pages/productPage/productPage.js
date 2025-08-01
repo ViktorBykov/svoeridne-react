@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import ApiService from "../../components/services/apiService";
-import StandardProductPage from "./standardProductPage";
-import PremiumProductPage from "./premiumProductPage";
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import ApiService from '../../components/services/apiService';
+import StandardProductPage from './standardProductPage';
+import PremiumProductPage from './premiumProductPage';
 
 function ProductPage() {
   const { productSlug } = useParams();

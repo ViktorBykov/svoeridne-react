@@ -15,48 +15,42 @@ import AboutPage from '../pages/about';
 import SearchResultPage from '../pages/searchResultPage';
 import FavoritesPage from '../pages/favoritesPage';
 
-const App = () => {
-    return (
-        <Router>
-            <div className="app">
-                <Header />
-                <main>
-                    <Routes>
-                        <Route path="/" element={<MainPage />} />
+function App() {
+  return (
+    <Router>
+      <div className="app">
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={<MainPage />} />
 
-                        <Route path="/events" element={<EventsPage />} />
-                        <Route path="/meetings" element={<MeetingsPage />} />
-                        <Route path="/forum" element={<ForumPage />} />
-                        <Route path="/about" element={<AboutPage />} />
+            <Route path="/events" element={<EventsPage />} />
+            <Route path="/meetings" element={<MeetingsPage />} />
+            <Route path="/forum" element={<ForumPage />} />
+            <Route path="/about" element={<AboutPage />} />
 
-                        <Route
-                            path="/search-results"
-                            element={<SearchResultPage />}
-                        />
-                        <Route path="/favorites" element={<FavoritesPage />} />
+            <Route path="/search-results" element={<SearchResultPage />} />
+            <Route path="/favorites" element={<FavoritesPage />} />
 
-                        <Route
-                            path="/:categoryName/:subcategoryName/:productSlug"
-                            element={<ProductPage />}
-                        />
-                        <Route
-                            path="/:categoryName/:productSlug"
-                            element={<ProductPage />}
-                        />
-                        <Route
-                            path="/:categoryName/:subcategoryName"
-                            element={<CatalogPage />}
-                        />
-                        <Route
-                            path="/:categoryName"
-                            element={<CatalogPage />}
-                        />
-                    </Routes>
-                </main>
-                <Footer />
-            </div>
-        </Router>
-    );
-};
+            <Route
+              path="/:categoryName/:subcategoryName/:productSlug"
+              element={<ProductPage />}
+            />
+            <Route
+              path="/:categoryName/:productSlug"
+              element={<ProductPage />}
+            />
+            <Route
+              path="/:categoryName/:subcategoryName"
+              element={<CatalogPage />}
+            />
+            <Route path="/:categoryName" element={<CatalogPage />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
+  );
+}
 
 export default App;

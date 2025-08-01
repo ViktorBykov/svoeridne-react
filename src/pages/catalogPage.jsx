@@ -7,75 +7,75 @@ import CatalogItemsFilters from '../components/catalogItemsFilters/catalogItemsF
 
 import './catalogPage.css';
 
-const CatalogPage = () => {
-    const { categoryName, subCategoryName } = useParams();
+function CatalogPage() {
+  const { categoryName, subCategoryName } = useParams();
 
-    const [products, setProducts] = useState([]);
-    const [subCategories, setSubCategories] = useState([]);
-    const [loading, setLoading] = useState(true);
+  const [products, setProducts] = useState([]);
+  const [subCategories, setSubCategories] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-    const [priceRange, setPriceRange] = useState([0, 1000]);
-    const [cities, setCities] = useState([]);
-    const [selectedCities, setSelectedCities] = useState([]);
+  const [priceRange, setPriceRange] = useState([0, 1000]);
+  const [cities, setCities] = useState([]);
+  const [selectedCities, setSelectedCities] = useState([]);
 
-    // Додаємо стейт для вибраних підкатегорій
-    const [selectedCategories, setSelectedCategories] = useState([]);
+  // Додаємо стейт для вибраних підкатегорій
+  const [selectedCategories, setSelectedCategories] = useState([]);
 
-    useEffect(() => {
-        ApiService.getCities().then(setCities);
-    }, []);
+  useEffect(() => {
+    ApiService.getCities().then(setCities);
+  }, []);
 
-    useEffect(() => {
-        if (products.length > 0) {
-            const prices = products.map(p => Number(p.price));
-            const min = Math.min(...prices);
-            const max = Math.max(...prices);
-            setPriceRange([min, max]);
-        }
-    }, [products]);
+  useEffect(() => {
+    if (products.length > 0) {
+      const prices = products.map((p) => Number(p.price));
+      const min = Math.min(...prices);
+      const max = Math.max(...prices);
+      setPriceRange([min, max]);
+    }
+  }, [products]);
 
-    useEffect(() => {
-        setLoading(true);
+  useEffect(() => {
+    setLoading(true);
 
-        if (subCategoryName) {
-            ApiService.getProductsBySubcategory(categoryName, subCategoryName)
-                .then(setProducts)
-                .finally(() => setLoading(false));
-        } else if (categoryName) {
-            Promise.all([
-                ApiService.getSubcategoriesInCategory(categoryName),
-                ApiService.getProductsByCategory(categoryName),
-            ])
-                .then(([subCategories, products]) => {
-                    setSubCategories(subCategories);
-                    setProducts(products);
-                })
-                .finally(() => {
-                    setLoading(false);
-                });
-        }
-        // eslint-disable-next-line
+    if (subCategoryName) {
+      ApiService.getProductsBySubcategory(categoryName, subCategoryName)
+        .then(setProducts)
+        .finally(() => setLoading(false));
+    } else if (categoryName) {
+      Promise.all([
+        ApiService.getSubcategoriesInCategory(categoryName),
+        ApiService.getProductsByCategory(categoryName),
+      ])
+        .then(([subCategories, products]) => {
+          setSubCategories(subCategories);
+          setProducts(products);
+        })
+        .finally(() => {
+          setLoading(false);
+        });
+    }
+    // eslint-disable-next-line
     }, [categoryName, subCategoryName]);
 
-    // Фільтрація по ціні, місту та підкатегоріям
-    const filteredProducts = products.filter(product => {
-        const inPrice =
-            Number(product.price) >= priceRange[0] &&
-            Number(product.price) <= priceRange[1];
-        const inCity =
-            selectedCities.length === 0 ||
-            selectedCities.includes(String(product.cityId));
-        const inCategory =
-            selectedCategories.length === 0 ||
-            selectedCategories.includes(String(product.subcategoryId));
-        return inPrice && inCity && inCategory;
-    });
+  // Фільтрація по ціні, місту та підкатегоріям
+  const filteredProducts = products.filter((product) => {
+    const inPrice =
+      Number(product.price) >= priceRange[0] &&
+      Number(product.price) <= priceRange[1];
+    const inCity =
+      selectedCities.length === 0 ||
+      selectedCities.includes(String(product.cityId));
+    const inCategory =
+      selectedCategories.length === 0 ||
+      selectedCategories.includes(String(product.subcategoryId));
+    return inPrice && inCity && inCategory;
+  });
 
-    if (loading) return <p>Завантаження...</p>;
+  if (loading) return <p>Завантаження...</p>;
 
-    return (
-        <div className="catalog-page container">
-            {/* <h2>
+  return (
+    <div className="catalog-page container">
+      {/* <h2>
         Каталог:{" "}
         {subCategoryName
           ? decodeURIComponent(subCategoryName)
@@ -87,37 +87,37 @@ const CatalogPage = () => {
         ))}
       </h2> */}
 
-            {products.length === 0 ? (
-                <p>Немає продуктів у цій категорії.</p>
-            ) : (
-                <div className="catalog-page-content">
-                    <CatalogItemsFilters
-                        min={Math.min(...products.map(p => Number(p.price)))}
-                        max={Math.max(...products.map(p => Number(p.price)))}
-                        value={priceRange}
-                        onChange={setPriceRange}
-                        cities={cities}
-                        selectedCities={selectedCities}
-                        setSelectedCities={setSelectedCities}
-                        categories={subCategories}
-                        selectedCategories={selectedCategories}
-                        setSelectedCategories={setSelectedCategories}
-                    />
+      {products.length === 0 ? (
+        <p>Немає продуктів у цій категорії.</p>
+      ) : (
+        <div className="catalog-page-content">
+          <CatalogItemsFilters
+            min={Math.min(...products.map((p) => Number(p.price)))}
+            max={Math.max(...products.map((p) => Number(p.price)))}
+            value={priceRange}
+            onChange={setPriceRange}
+            cities={cities}
+            selectedCities={selectedCities}
+            setSelectedCities={setSelectedCities}
+            categories={subCategories}
+            selectedCategories={selectedCategories}
+            setSelectedCategories={setSelectedCategories}
+          />
 
-                    <div className="catalog-page-products">
-                        {filteredProducts.map(product => (
-                            <CatalogItem
-                                key={product.id}
-                                product={product}
-                                categoryName={categoryName}
-                                subCategoryName={subCategoryName}
-                            />
-                        ))}
-                    </div>
-                </div>
-            )}
+          <div className="catalog-page-products">
+            {filteredProducts.map((product) => (
+              <CatalogItem
+                key={product.id}
+                product={product}
+                categoryName={categoryName}
+                subCategoryName={subCategoryName}
+              />
+            ))}
+          </div>
         </div>
-    );
-};
+      )}
+    </div>
+  );
+}
 
 export default CatalogPage;

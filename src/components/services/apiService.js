@@ -1,5 +1,5 @@
 // src/ApiService.js
-const API_BASE = "http://localhost:3000";
+const API_BASE = 'http://localhost:3000';
 
 const ApiService = {
   async getCategories() {
@@ -21,7 +21,7 @@ const ApiService = {
     const subcategories = await subcategoriesRes.json();
 
     const filteredSubcategories = subcategories.filter(
-      (sc) => sc.categoryId === Number(category.id)
+      (sc) => sc.categoryId === Number(category.id),
     );
 
     return filteredSubcategories;
@@ -47,13 +47,13 @@ const ApiService = {
       (sc) =>
         sc.name.toLowerCase() ===
           decodeURIComponent(subCategoryName).toLowerCase() &&
-        sc.categoryId === category.id
+        sc.categoryId === category.id,
     );
 
     if (!subcategory) return [];
 
     const res = await fetch(
-      `${API_BASE}/products?categoryId=${category.id}&subcategoryId=${subcategory.id}`
+      `${API_BASE}/products?categoryId=${category.id}&subcategoryId=${subcategory.id}`,
     );
     return res.json();
   },
@@ -62,7 +62,7 @@ const ApiService = {
     const allProducts = await fetch(`${API_BASE}/products`);
     const products = await allProducts.json();
     return products.find(
-      (p) => p.slug.toLowerCase().replace(/\s+/g, "-") === slug
+      (p) => p.slug.toLowerCase().replace(/\s+/g, '-') === slug,
     );
   },
 
@@ -70,7 +70,7 @@ const ApiService = {
     const allReviews = await fetch(`${API_BASE}/comments`);
     const reviews = await allReviews.json();
     const filteredReviews = reviews.filter(
-      (r) => Number(r.productId) === Number(id)
+      (r) => Number(r.productId) === Number(id),
     );
 
     return filteredReviews;
@@ -85,9 +85,9 @@ const ApiService = {
 
   async addReview(productId, reviewData) {
     const response = await fetch(`${API_BASE}/comments`, {
-      method: "POST",
+      method: 'POST',
       headers: {
-        "Content-Type": "application/json",
+        'Content-Type': 'application/json',
       },
       body: JSON.stringify({
         ...reviewData,
@@ -97,7 +97,7 @@ const ApiService = {
     });
 
     if (!response.ok) {
-      throw new Error("Failed to add review");
+      throw new Error('Failed to add review');
     }
 
     return response.json();
